@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Аскерко](https://up.htmlacademy.ru/adaptive/18/user/1175573).
-* Наставник: `Неизвестно`.
+* Наставник: `Ольга Тюлихова`(https://htmlacademy.ru/profile/id523263).
 
 ---
 
