@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Страница с формой</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo">
+    <img src="" alt="Логотип Pink" class="page-header__logo--image">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      Открыть меню
+    </button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a href="index.html">
+          Главная
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a href="photo.html">
+          Фотографии
+        </a>
+      </li>
+      <li class="site-list__item site-list__item--current">
+        <a>
+          Конкурс
+        </a>
+      </li>
+      <li class="site-list__item">
+        <a href="">
+          HTML Academy
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="page-main">
+  <section class="after-header">
+  <p class="after-header__title">
+    Конкурс на самое безбашенное путешествие с Пинк
+  </p>
+  </section>
+  <section class="question-answer">
+    <h2 class="visually-hidden">
+      Раздел со слоганом
+    </h2>
+    <p class="question-answer__text">
+      Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
+    </p>
+  </section>
+  <section class="form">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__first">
+        <fieldset>
+          <label class="form__label--first">
+            Фамилия:
+            <input type="text" placeholder="Укажите фамилию *" name="фамилия" class="form__input">
+          </label>
+          <label class="form__label--first">
+            Имя:
+            <input type="text" placeholder="Введите ваше имя *" name="имя" class="form__input">
+          </label>
+          <label class="form__label--first">
+            Отчество:
+            <input type="text" placeholder="Ну и отчество тоже" name="отчество" class="form__input">
+          </label>
+        </fieldset>
+      </div>
+      <div class="form__second">
+        <h2 class="form__slogan">
+          Ваши безбашенные достижения в путешествии
+        </h2>
+        <label class="form__label--second">
+          <input type="checkbox" name="достижения в путешествии" value="Сделал селфи с акулой" class="form__checkbox">
+          Сделал селфи с акулой
+        </label>
+        <label class="form__label--second">
+          <input type="checkbox" name="достижения в путешествии" value="Сделал селфи с акулой" class="form__checkbox">
+          Сделал селфи с акулой
+        </label>
+        <label class="form__label--second">
+          <input type="checkbox" name="достижения в путешествии" value="Видел Чака Норриса" class="form__checkbox">
+          Видел Чака Норриса
+        </label>
+        <label class="form__label--second">
+          <input type="checkbox" name="достижения в путешествии" value="Накупил сувениров" class="form__checkbox">
+          Накупил сувениров
+        </label>
+        <label class="form__label--second">
+          <input type="checkbox" name="достижения в путешествии" value="Удержал башню" class="form__checkbox">
+          Удержал башню
+        </label>
+        <label class="form__title">
+          <input type="checkbox" name="достижения в путешествии" value="Разгромил отель" class="form__checkbox">
+          Разгромил отель
+        </label>
+      </div>
+      <div class="form__third">
+        <label class="form__label--third">
+          Номер телефона
+          <input type="number" class="form__input" name="номер телефона" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="form__label--third">
+          адрес почты
+          <input type="email" class="form__input" name="email" placeholder="Введите почту *">
+        </label>
+      </div>
+      <div class="form__four">
+        <h2 class="form__slogan">
+          С каким приложением путешествовали?
+        </h2>
+        <label class="form__label--four">
+          <input type="radio" name="тип приложения" value="Pink для iOS" class="form__radio">
+          Pink для iOS
+        </label>
+        <label class="form__label--four">
+          <input type="radio" name="тип приложения" value="Pink на Android" class="form__radio">
+          Pink на Android
+        </label>
+        <label class="form__label--four">
+          <input type="radio" name="тип приложения" value="Windows Phone" class="form__radio">
+          Windows Phone
+        </label>
+      </div>
+      <div class="form__five">
+        <h2 class="form__slogan">
+          Опишите свои эмоции
+        </h2>
+        <label>
+          <textarea name="отзыв в свободной форме" id="" cols="30" rows="10"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </label>
+      </div>
+      <button type="submit" class="form__button button-pink">
+        Отправить форму
+      </button>
+    </form>
+    <small class="form__desc">
+      * — обязательные поля
+    </small>
+  </section>
+</main>
+<footer class="second-type-footer">
+  <div class="second-type-footer__logo-top">
+    <a href="">
+      <img src="" alt="Логотип Pink" class="footer-logo-image">
+    </a>
+  </div>
+  <div class="second-type-footer__social">
+    <ul class="second-type-footer__list">
+      <li class="second-type-footer__item">
+        <a href="#"><img src="#" alt="Мы в Твиттере" class="second-type-footer__image">
+        </a>
+      </li>
+      <li class="second-type-footer__item">
+        <a href="#"><img src="#" alt="Мы на Фейсбуке" class="second-type-footer__image">
+        </a>
+      </li>
+      <li class="second-type-footer__item">
+        <a href="#"><img src="#" alt="Мы на Youtube" class="second-type-footer__image">
+        </a>
+      </li>
+    </ul>
+    <div class="second-type-footer__logo-bottom">
+      <span class="second-type-footer__logo-bottom-text">
+        Разработано
+      </span>
+      <a href="https://up.htmlacademy.ru/">
+        <img src="" alt="Логотип htmlAcademy" class="second-type-footer__image">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
