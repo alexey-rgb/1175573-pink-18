@@ -6,7 +6,7 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo">
+  <a href="index.html" class="page-header__logo">
     <img src="" alt="Логотип Pink" class="page-header__logo--image">
   </a>
   <nav class="main-nav">
@@ -39,33 +39,39 @@
 </header>
 <main class="page-main">
   <section class="after-header">
-  <p class="after-header__title">
+    <h2 class="visually-hidden">
+      Раздел с объявлением конкурса
+    </h2>
+  <h1 class="after-header__title">
     Конкурс на самое безбашенное путешествие с Пинк
-  </p>
+  </h1>
   </section>
   <section class="question-answer">
     <h2 class="visually-hidden">
-      Раздел со слоганом
+      Раздел с предложением принять участие в конкурсе
     </h2>
     <p class="question-answer__text">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </p>
   </section>
   <section class="form">
+    <h2 class="visually-hidden">
+      Заполнить форму для участия в конкурсе
+    </h2>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="form__first">
         <fieldset>
-          <label class="form__label--first">
+          <label class="form__label form__label--first">
             Фамилия:
-            <input type="text" placeholder="Укажите фамилию *" name="фамилия" class="form__input">
+            <input type="text" placeholder="Укажите фамилию *" name="surname" class="form__input">
           </label>
           <label class="form__label--first">
             Имя:
-            <input type="text" placeholder="Введите ваше имя *" name="имя" class="form__input">
+            <input type="text" placeholder="Введите ваше имя *" name="name" class="form__input">
           </label>
           <label class="form__label--first">
             Отчество:
-            <input type="text" placeholder="Ну и отчество тоже" name="отчество" class="form__input">
+            <input type="text" placeholder="Ну и отчество тоже" name="patronymic" class="form__input">
           </label>
         </fieldset>
       </div>
@@ -74,34 +80,34 @@
           Ваши безбашенные достижения в путешествии
         </h2>
         <label class="form__label--second">
-          <input type="checkbox" name="достижения в путешествии" value="Сделал селфи с акулой" class="form__checkbox">
+          <input type="checkbox" name="achievement in travel" value="Сделал селфи с акулой" class="form__checkbox" checked>
           Сделал селфи с акулой
         </label>
         <label class="form__label--second">
-          <input type="checkbox" name="достижения в путешествии" value="Сделал селфи с акулой" class="form__checkbox">
-          Сделал селфи с акулой
+          <input type="checkbox" name="achievement in travel" value="Обгорел на пляже" class="form__checkbox" checked>
+          Обгорел на пляже
         </label>
         <label class="form__label--second">
-          <input type="checkbox" name="достижения в путешествии" value="Видел Чака Норриса" class="form__checkbox">
+          <input type="checkbox" name="achievement in travel" value="Видел Чака Норриса" class="form__checkbox">
           Видел Чака Норриса
         </label>
         <label class="form__label--second">
-          <input type="checkbox" name="достижения в путешествии" value="Накупил сувениров" class="form__checkbox">
+          <input type="checkbox" name="achievement in travel" value="Накупил сувениров" class="form__checkbox">
           Накупил сувениров
         </label>
         <label class="form__label--second">
-          <input type="checkbox" name="достижения в путешествии" value="Удержал башню" class="form__checkbox">
+          <input type="checkbox" name="achievement in travel" value="Удержал башню" class="form__checkbox" checked>
           Удержал башню
         </label>
         <label class="form__title">
-          <input type="checkbox" name="достижения в путешествии" value="Разгромил отель" class="form__checkbox">
+          <input type="checkbox" name="achievement in travel" value="Разгромил отель" class="form__checkbox">
           Разгромил отель
         </label>
       </div>
       <div class="form__third">
         <label class="form__label--third">
           Номер телефона
-          <input type="number" class="form__input" name="номер телефона" placeholder="Номер, пожалуйста">
+          <input type="tel" class="form__input" name="phone" placeholder="Номер, пожалуйста">
         </label>
         <label class="form__label--third">
           адрес почты
@@ -113,15 +119,15 @@
           С каким приложением путешествовали?
         </h2>
         <label class="form__label--four">
-          <input type="radio" name="тип приложения" value="Pink для iOS" class="form__radio">
+          <input type="radio" name="apps type" value="Pink для iOS" class="form__radio" checked>
           Pink для iOS
         </label>
         <label class="form__label--four">
-          <input type="radio" name="тип приложения" value="Pink на Android" class="form__radio">
+          <input type="radio" name="apps type" value="Pink на Android" class="form__radio">
           Pink на Android
         </label>
         <label class="form__label--four">
-          <input type="radio" name="тип приложения" value="Windows Phone" class="form__radio">
+          <input type="radio" name="apps type" value="Windows Phone" class="form__radio">
           Windows Phone
         </label>
       </div>
@@ -130,7 +136,7 @@
           Опишите свои эмоции
         </h2>
         <label>
-          <textarea name="отзыв в свободной форме" id="" cols="30" rows="10"
+          <textarea name="review" id="" cols="30" rows="10"
                     placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </label>
       </div>
@@ -143,33 +149,36 @@
     </small>
   </section>
 </main>
-<footer class="second-type-footer">
-  <div class="second-type-footer__logo-top">
-    <a href="">
-      <img src="" alt="Логотип Pink" class="footer-logo-image">
+<footer class="page-footer">
+  <div class="page-footer__logo-top">
+    <a href="" class="logo-top">
+      <img src="" alt="Логотип Pink" class="logo-top__image">
     </a>
   </div>
-  <div class="second-type-footer__social">
-    <ul class="second-type-footer__list">
-      <li class="second-type-footer__item">
-        <a href="#"><img src="#" alt="Мы в Твиттере" class="second-type-footer__image">
+  <div class="page-footer__social">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы в Твиттере" class="page-footer__image page-footer__image--twitter">
         </a>
       </li>
-      <li class="second-type-footer__item">
-        <a href="#"><img src="#" alt="Мы на Фейсбуке" class="second-type-footer__image">
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы на Фейсбуке" class="page-footer__image page-footer__image--facebook">
         </a>
       </li>
-      <li class="second-type-footer__item">
-        <a href="#"><img src="#" alt="Мы на Youtube" class="second-type-footer__image">
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы на Youtube" class="page-footer__image page-footer__image--youtube">
         </a>
       </li>
     </ul>
-    <div class="second-type-footer__logo-bottom">
-      <span class="second-type-footer__logo-bottom-text">
+    <div class="page-footer__logo-bottom">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-bottom">
+        <span class="logo-bottom__text">
         Разработано
       </span>
-      <a href="https://up.htmlacademy.ru/">
-        <img src="" alt="Логотип htmlAcademy" class="second-type-footer__image">
+        <img src="" alt="Логотип htmlAcademy" class="logo-bottom__image">
       </a>
     </div>
   </div>

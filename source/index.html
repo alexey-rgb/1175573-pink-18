@@ -6,8 +6,11 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo">
-    <img src="" alt="Логотип Pink" class="page-header__logo--image">
+  <h1 class="visually-hidden">
+    Скачать приложение Pink и прочитать отзывы.
+  </h1>
+  <a href="index.html" class="page-header__logo">
+    <img src="" alt="Логотип Pink" class="page-header__image">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle main-nav__toggle--close" type="button">
@@ -39,6 +42,9 @@
 </header>
 <main class="page-main">
   <section class="after-header">
+    <h2 class="visually-hidden">
+      Скачать приложение
+    </h2>
     <p class="after-header__title">
       Взгляните на жизнь иначе!
     </p>
@@ -46,20 +52,26 @@
       <img src="" alt="Рука со смартфоном">
     </div>
     <div class="after-header__wrapper">
-      <button class="after-header__button button-pink" type="button">
+      <a href="https://www.apple.com/ru/ios/app-store/" class="after-header__button button-pink">
         Скачать приложение
-      </button>
+      </a>
       <div class="after-header__image">
         <img src="" alt="Рука со смартфоном">
       </div>
       <div class="after-header__os-icon">
-        <img src="" alt="Логотип android">
-        <img src="" alt="Логотип windows">
-        <img src="" alt="Логотип iphone">
+        <a href="https://play.google.com/store/apps?hl=ru">
+          <img src="" alt="Логотип android">
+        </a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
+            <img src="" alt="Логотип windows">
+          </a>
+        <a href="https://www.apple.com/ru/ios/app-store/">
+          <img src="" alt="Логотип macOS">
+        </a>
       </div>
-      <span class="after-header__text">
+      <p class="after-header__text">
      Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-   </span>
+   </p>
     </div>
   </section>
   <section class="question-answer">
@@ -78,7 +90,7 @@
       Преимущества
     </h2>
     <div class="advantages__wrapper">
-      <h2 class="advantages__tittle">
+      <h2 class="advantages__title">
         Поднимает настроение
       </h2>
       <p class="advantages__text">
@@ -86,7 +98,7 @@
       </p>
     </div>
     <div class="advantages__wrapper">
-      <h2 class="advantages__tittle">
+      <h2 class="advantages__title">
         Меняет мир вокруг
       </h2>
       <p class="advantages__text">
@@ -94,7 +106,7 @@
       </p>
     </div>
     <div class="advantages__wrapper">
-      <h2 class="advantages__tittle">
+      <h2 class="advantages__title">
         Заводит новых друзей
       </h2>
       <p class="advantages__text">
@@ -131,11 +143,11 @@
         <p class="reviews__text">
         </p>
       </blockquote>
-      <button class="reviews__button slider__button">
+      <button class="reviews__button slider__button" type="button">
       </button>
-      <button class="reviews__button slider__button">
+      <button class="reviews__button slider__button" type="button">
       </button>
-      <button class="reviews__button slider__button">
+      <button class="reviews__button slider__button" type="button">
       </button>
     </div>
   </section>
@@ -146,106 +158,120 @@
     <div class="price__wrapper price-slider">
       <table class="price__sheet price-slider__sheet">
         <tr>
-          <th class="price__type price__option--hit">
+          <th class="price__type price__type--hit">
             Стандарт
             <span class="price__total">
               3,99 USD
             </span>
           </th>
-        </tr>
-        <tr>
-          <td class="price__option">
-            Розовый фильтр
-          </td>
-        </tr>
-        <tr>
-          <td class="price__option">
-            Смайлики
-          </td>
-        </tr>
-        <tr>
-          <td class="price__option">
-            Комментарии
-          </td>
-        </tr>
-      </table>
-      <table class="price__sheet price-slider__sheet">
-        <tr>
-          <th class="price__type price__option--hit">
+          <th class="price__type">
+            <span class="price__total">
+            </span>
+          </th>
+          <th class="price__type">
             <span class="price__total">
             </span>
           </th>
         </tr>
         <tr>
+          <td class="price__option price__option--include">
+            Розовый фильтр
+          </td>
+          <td class="price__option">
+          </td>
           <td class="price__option">
           </td>
         </tr>
         <tr>
+          <td class="price__option price__option--include">
+            Смайлики
+          </td>
+          <td class="price__option">
+          </td>
           <td class="price__option">
           </td>
         </tr>
         <tr>
+          <td class="price__option price__option--not-included">
+            Комментарии
+          </td>
           <td class="price__option">
           </td>
-        </tr>
-      </table>
-      <table class="price__sheet price-slider__sheet">
-        <tr>
-          <th class="price__type price__option--hit">
-          <span class="price__total">
-            </span>
-          </th>
-        </tr>
-        <tr>
-          <td class="price__option">
-          </td>
-        </tr>
-        <tr>
-          <td class="price__option">
-          </td>
-        </tr>
-        <tr>
           <td class="price__option">
           </td>
         </tr>
       </table>
-      <button class="price__button slider__button">
+      <button class="price__button" type="button">
       </button>
-      <button class="price__button slider__button">
+      <button class="price__button" type="button">
       </button>
-      <button class="price__button slider__button">
+      <button class="price__button" type="button">
       </button>
     </div>
   </section>
 </main>
-<footer class="page-footer">
+<section class="contacts">
   <h2 class="visually-hidden">
     Раздел с контактной информацией.
   </h2>
-  <p class="page-footer__text">
+  <p class="contacts__text">
     Остались вопросы? Свяжитесь с нами!
   </p>
   <div>
-  <span class="page-footer__title">
+  <p class="contacts__title">
     Звоните:
-  </span>
-    <a href="tel:+7(812)555-66-66" class="page-footer__contact">
+  </p>
+    <a href="tel:+78125556666" class="contacts__phone">
       +7 (812) 555-66-66
     </a>
-    <span class="page-footer__title">
+    <p class="contacts__title">
     Пишите:
-  </span>
-    <a href="" class="page-footer__contact">
+  </p>
+    <a href="mailto:mail@htmlacademy.ru" class="contacts__email">
       mail@htmlacademy.ru
     </a>
-    <span class="page-footer__title">
+    <p class="contacts__title">
     Приезжайте в гости:
-  </span>
-    <a href="" class="page-footer__contact">
+  </p>
+    <a href="" class="contacts__address">
       ул. Большая Конюшенная, 19/8
     </a>
   </div>
-  <div id="map" class="page-footer__map" style="height: 400px; width: auto;">
+  <div id="map" class="contacts__map" style="height: 400px; width: auto;">
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="page-footer__logo-top">
+    <a href="" class="logo-top">
+      <img src="" alt="Логотип Pink" class="logo-top__image">
+    </a>
+  </div>
+  <div class="page-footer__social">
+    <ul class="page-footer__list">
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы в Твиттере" class="page-footer__image page-footer__image--twitter">
+        </a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы на Фейсбуке" class="page-footer__image page-footer__image--facebook">
+        </a>
+      </li>
+      <li class="page-footer__item">
+        <a href="#">
+          <img src="#" alt="Мы на Youtube" class="page-footer__image page-footer__image--youtube">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__logo-bottom">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-bottom">
+        <span class="logo-bottom__text">
+        Разработано
+      </span>
+        <img src="" alt="Логотип htmlAcademy" class="logo-bottom__image">
+      </a>
+    </div>
   </div>
 </footer>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
