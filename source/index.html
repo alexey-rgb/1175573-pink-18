@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title>Главная страница</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header container">
   <h1 class="visually-hidden">
     Скачать приложение Pink и прочитать отзывы.
   </h1>
   <a class="page-header__logo">
-    <img src="" alt="Логотип Pink" class="page-header__image">
+    <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" class="page-header__image">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle main-nav__toggle--close" type="button">
-      Открыть меню
     </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item site-list__item--current">
-        <a>
+        <a class="main-nav__link">
           Главная
         </a>
       </li>
       <li class="site-list__item">
-        <a href="photo.html">
+        <a href="photo.html" class="main-nav__link">
           Фотографии
         </a>
       </li>
       <li class="site-list__item">
-        <a href="form.html">
+        <a href="form.html" class="main-nav__link">
           Конкурс
         </a>
       </li>
       <li class="site-list__item">
-        <a href="">
+        <a href="" class="main-nav__link">
           HTML Academy
         </a>
       </li>
     </ul>
   </nav>
 </header>
-<main class="page-main">
+<main class="page-main container">
   <section class="after-header">
     <h2 class="visually-hidden">
       Скачать приложение
@@ -49,32 +50,28 @@
       Взгляните на жизнь иначе!
     </p>
     <div class="after-header__image">
-      <img src="" alt="Рука со смартфоном">
     </div>
     <div class="after-header__wrapper">
       <a href="https://www.apple.com/ru/ios/app-store/" class="after-header__button button-pink">
         Скачать приложение
       </a>
-      <div class="after-header__image">
-        <img src="" alt="Рука со смартфоном">
-      </div>
       <div class="after-header__os-icon">
         <a href="https://play.google.com/store/apps?hl=ru">
-          <img src="" alt="Логотип android">
+          <img src="img/logo-android.svg" alt="Логотип android" width="42" height="47">
         </a>
-          <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
-            <img src="" alt="Логотип windows">
-          </a>
+        <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
+          <img src="img/logo-microsoft.svg" alt="Логотип windows" width="44" height="42">
+        </a>
         <a href="https://www.apple.com/ru/ios/app-store/">
-          <img src="" alt="Логотип macOS">
+          <img src="img/logo-apple.svg" alt="Логотип macOS" width="46" height="57">
         </a>
       </div>
       <p class="after-header__text">
-     Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-   </p>
+        Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+      </p>
     </div>
   </section>
-  <section class="question-answer">
+  <section class="question-answer container">
     <h2 class="visually-hidden">
       Раздел со слоганом
     </h2>
@@ -85,7 +82,7 @@
       Нам есть, что вам предложить!
     </p>
   </section>
-  <section class="advantages">
+  <section class="advantages container">
     <h2 class="visually-hidden">
       Преимущества
     </h2>
@@ -114,7 +111,7 @@
       </p>
     </div>
     <div class="advantages__image">
-      <img src="" alt="Смартфон с изображением приложения">
+      <img src="img/iphone-screen-mobile@1x.png" alt="Смартфон с изображением приложения">
     </div>
   </section>
   <section class="reviews">
@@ -209,7 +206,6 @@
       </button>
     </div>
   </section>
-</main>
 <section class="contacts">
   <h2 class="visually-hidden">
     Раздел с контактной информацией.
@@ -218,21 +214,21 @@
     Остались вопросы? Свяжитесь с нами!
   </p>
   <div>
-  <p class="contacts__title">
-    Звоните:
-  </p>
+    <p class="contacts__title">
+      Звоните:
+    </p>
     <a href="tel:+78125556666" class="contacts__phone">
       +7 (812) 555-66-66
     </a>
     <p class="contacts__title">
-    Пишите:
-  </p>
+      Пишите:
+    </p>
     <a href="mailto:mail@htmlacademy.ru" class="contacts__email">
       mail@htmlacademy.ru
     </a>
     <p class="contacts__title">
-    Приезжайте в гости:
-  </p>
+      Приезжайте в гости:
+    </p>
     <a href="" class="contacts__address">
       ул. Большая Конюшенная, 19/8
     </a>
@@ -240,10 +236,11 @@
   <div id="map" class="contacts__map" style="height: 400px; width: auto;">
   </div>
 </section>
-<footer class="page-footer">
+</main>
+<footer class="page-footer container">
   <div class="page-footer__logo-top">
     <a href="" class="logo-top">
-      <img src="" alt="Логотип Pink" class="logo-top__image">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink" class="logo-top__image">
     </a>
   </div>
   <div class="page-footer__social">
@@ -261,15 +258,15 @@
         </a>
       </li>
     </ul>
+  </div>
     <div class="page-footer__logo-bottom">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-bottom">
         <span class="logo-bottom__text">
         Разработано
       </span>
-        <img src="https://via.placeholder.com/150x150" alt="Логотип htmlAcademy" class="logo-bottom__image">
+        <img src="img/logo-htmlacademy.svg" alt="Логотип htmlAcademy" class="logo-bottom__image">
       </a>
     </div>
-  </div>
 </footer>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
 </script>
