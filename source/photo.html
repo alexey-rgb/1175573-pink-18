@@ -1,206 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title>Галерея фотографий</title>
+  <title>
+    Фотогалерея
+  </title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
-  <a href="index.html" class="page-header__logo">
-    <img src="" alt="Логотип Pink" class="page-header__image">
+<header class="page-header page-header--close container">
+  <h1 class="visually-hidden">
+    Скачать приложение Pink и прочитать отзывы.
+  </h1>
+  <a class="page-header__logo">
+    <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink" class="page-header__image">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle main-nav__toggle--close" type="button">
-      Открыть меню
     </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="index.html">
+        <a href="index.html" class="main-nav__link">
           Главная
         </a>
       </li>
       <li class="site-list__item site-list__item--current">
-        <a>
+        <a class="main-nav__link">
           Фотографии
         </a>
       </li>
       <li class="site-list__item">
-        <a href="form.html">
+        <a href="form.html" class="main-nav__link">
           Конкурс
         </a>
       </li>
       <li class="site-list__item">
-        <a href="">
+        <a href="" class="main-nav__link">
           HTML Academy
         </a>
       </li>
     </ul>
   </nav>
 </header>
-<main class="page-main">
-  <section class="after-header">
-    <h1 class="after-header__title">
+<main class="photo-gallery-block container">
+  <section class="photo-gallery-block__section container">
+    <p class="photo-gallery-block__title">
       Фотографии пользователей
-    </h1>
+    </p>
   </section>
-  <section class="question-answer">
+  <section class="photo-gallery-block__slogan container">
     <h2 class="visually-hidden">
       Раздел со слоганом
     </h2>
-    <p class="question-answer__text">
-      Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+    <p class="photo-gallery-block__text">
+      <span class="photo-gallery-block__text-position">
+        Взгляните на фотографии, которые
+      </span>
+      <span class="photo-gallery-block__text-position">
+        выкладывают пользователи!
+      </span>
+      <span class="photo-gallery-block__text-position">
+        Видите, как не хватает ваших?
+      </span>
     </p>
   </section>
-  <section class="photo-gallery">
+  <section class="photo-gallery-block__user-photo photo-gallery">
     <h2 class="visually-hidden">
       Фотогалерея с описаниями
     </h2>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image photo-gallery__image--best">
         <a href="#">
-          <img src="" alt="Классная панорама">
+          <img src="img/panorama-mobile@1x.jpg" alt="Классная панорама">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Анна
-        <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Анна
+          <span class="photo-gallery__time-register">
         (5 минут назад)
       </span>
-      </p>
-      <p class="photo-gallery__text">
-        Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
-        вопросы!
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои
+          вопросы!
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 215
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Классная видеокамера">
+          <img src="img/photo-car-mobile@1x.jpg" alt="Классная видеокамера">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Левон
-        <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Левон
+          <span class="photo-gallery__time-register">
         (5 часов назад)
       </span>
-      </p>
-      <p class="photo-gallery__text">
-        Вчера он на луну летал, сегодня в руки к нам попал.
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 356
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Барабанная установка">
+          <img src="img/photo-drumset-mobile@1x.jpg" alt="Барабанная установка">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Антон
-        <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Антон
+          <span class="photo-gallery__time-register">
         (12 часов назад)
       </span>
-      </p>
-      <p class="photo-gallery__text">
-        Соседи будут рады!
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Соседи будут рады!
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 666
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Перспектив, вид на крышу">
+          <img src="img/photo-window-mobile@1x.jpg" alt="Перспектив, вид на крышу">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Борис
-        <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Борис
+          <span class="photo-gallery__time-register">
         (20 часов назад)
       </span>
-      </p>
-      <p class="photo-gallery__text">
-        Здесь могла быть ваша цитата о высоком и вечном.
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Здесь могла быть ваша цитата о высоком и вечном.
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 215
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Местный рынок">
+          <img src="img/photo-fair-mobile@1x.jpg" alt="Местный рынок">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Сергей
-        <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Сергей
+          <span class="photo-gallery__time-register">
           (25 часов назад)
         </span>
-      </p>
-      <p class="photo-gallery__text">
-        Самая кубанская в мире!
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Самая кубанская в мире!
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 4
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Вид с горы или как носить ботинки без носок.">
+          <img src="img/photo-pov-mobile@1x.jpg" alt="Вид с горы или как носить ботинки без носок.">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Максим
-      <span class="photo-gallery__time-register">
-        (40 часов назад)
-      </span>
-      </p>
-      <p class="photo-gallery__text">
-        Где снег-то?
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Максим
+          <span class="photo-gallery__time-register">
+            (40 часов назад)
+          </span>
+        </p>
+        <p class="photo-gallery__text">
+          Где снег-то?
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 150
         </span>
+        </div>
       </div>
     </div>
     <div class="photo-gallery__card">
       <div class="photo-gallery__image">
         <a href="#">
-          <img src="" alt="Вид из элеватора.">
+          <img src="img/photo-wing-mobile@1x.jpg" alt="Вид из элеватора.">
         </a>
       </div>
-      <p class="photo-gallery__author">
-        Надежда
-      <span class="photo-gallery__time-register">
+      <div class="photo-gallery__wrapper">
+        <p class="photo-gallery__author">
+          Надежда
+          <span class="photo-gallery__time-register">
         (45 часов назад)
       </span>
-      </p>
-      <p class="photo-gallery__text">
-        Всем GM и взаимные лайки!
-      </p>
-      <div class="photo-gallery__like-area like-area">
-        <span class="like-area__text">
+        </p>
+        <p class="photo-gallery__text">
+          Всем GM и взаимные лайки!
+        </p>
+        <div class="photo-gallery__like-area">
+        <span class="photo-gallery__like-point">
           Нравится: 2560
         </span>
+        </div>
       </div>
     </div>
   </section>
@@ -210,24 +239,32 @@
         Добавить свою фотографию на сайт.
       </h2>
       <p class="make-post__title">
-        Затмите их всех! Выкладывайте все, что накопилось в телефоне!
+        <span class="make-post__title-position">
+          Затмите их всех!
+        </span>
+        <span class="make-post__title-position">
+          Выкладывайте все, что накопилось в
+        </span>
+        <span class="make-post__title-position">
+          телефоне!
+        </span>
       </p>
-      <div class="make-post-image">
-        <img src="" alt="Моя фотография">
+      <div class="make-post__image">
+        <img src="img/photo-road-mobile@1x.jpg" alt="Моя фотография">
       </div>
       <div class="make-post__control-area">
         <ul class="make-post__list">
           <li class="make-post__item">
-            <img src="" alt="">
+            <img src="img/icon-editor-crop.svg" alt="Инструмент для обрезки фотографии">
           </li>
           <li class="make-post__item">
-            <img src="" alt="">
+            <img src="img/icon-editor-fill.svg" alt="Инструмент для заливки цвета">
           </li>
           <li class="make-post__item">
-            <img src="" alt="">
+            <img src="img/icon-editor-contrast.svg" alt="Инструмент для настройки контрастности">
           </li>
         </ul>
-        <button type="submit" class="make-post__button button-pink">
+        <button type="submit" class="make-post__button make-post__button--line">
           Запостить
         </button>
         <button type="button" class="make-post__button button-pink">
@@ -237,10 +274,10 @@
     </form>
   </section>
 </main>
-<footer class="page-footer">
+<footer class="page-footer container">
   <div class="page-footer__logo-top">
     <a href="" class="logo-top">
-      <img src="" alt="Логотип Pink" class="logo-top__image">
+      <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink" class="logo-top__image">
     </a>
   </div>
   <div class="page-footer__social">
@@ -258,14 +295,14 @@
         </a>
       </li>
     </ul>
-    <div class="page-footer__logo-bottom">
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-bottom">
+  </div>
+  <div class="page-footer__logo-bottom">
+    <a href="https://htmlacademy.ru/intensive/adaptive" class="logo-bottom">
         <span class="logo-bottom__text">
         Разработано
       </span>
-        <img src="https://via.placeholder.com/150x150" alt="Логотип htmlAcademy" class="logo-bottom__image">
-      </a>
-    </div>
+      <img src="img/logo-htmlacademy.svg" alt="Логотип htmlAcademy" class="logo-bottom__image">
+    </a>
   </div>
 </footer>
 </body>

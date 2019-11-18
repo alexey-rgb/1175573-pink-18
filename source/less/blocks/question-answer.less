@@ -1,21 +1,18 @@
 .question-answer {
-  margin-top: 256px;
+  position: relative;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .question-answer::after {
   content: "";
   display: block;
   position: absolute;
-  bottom: -107px;
+  bottom: -62px;
   width: 100%;
-  height: 50px;
-  background-image: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
-}
-
-.question-answer {
-  position: relative;
-  text-align: center;
-  padding-top: 10px;
+  height: 36px;
+  background-image: linear-gradient(to right bottom, #fff 50%, @grey-light 50%);
 }
 
 .question-answer {
@@ -23,20 +20,13 @@
   font-family: @font;
   font-size: 24px;
   font-weight: 300;
+  line-height: 30px;
 }
 
-.advantages {
-  background-color: #f2f2f2;
-  margin: 107px 0 0 0;
-  padding: 0;
-  text-align: center;
-}
-
-.advantages__title {
-  padding: 40px 0 0 0;
+.question-answer__text {
   margin: 0;
 }
 
-.advantages__image {
-  padding-top: 30px;
+.question-answer .question-answer__text:first-of-type {
+  padding: 25px 0 27px 0;
 }

@@ -12,31 +12,59 @@
   position: relative;
 }
 
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  /*outline: none;
+  border: none;*/
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: #ffffff;
+  left: 69px;
+}
+
+.main-nav__toggle::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 4px;
+  background-color: #fff;
+  left: 69px;
+}
+
 .main-nav__toggle--close {
   position: absolute;
-  left: 206px;
-  top: -38px;
+  left: 263px;
+  top: -52px;
   background-color: @grey;
   outline: none;
   border: none;
 }
 
-.main-nav__toggle--close:before {
+.main-nav__toggle--close::before {
   content: "";
   position: absolute;
   width: 28px;
   height: 4px;
   background-color: #fff;
-  left: 69px;
+  left: 12px;
   transform: rotate(135deg);
 }
 
-.main-nav__toggle--close:after {
+.main-nav__toggle--close::after {
   content: "";
   position: absolute;
   width: 28px;
   height: 4px;
   background-color: #fff;
-  left: 69px;
+  left: 12px;
   transform: rotate(45deg);
 }
