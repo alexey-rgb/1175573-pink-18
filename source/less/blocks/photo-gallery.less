@@ -1,0 +1,66 @@
+.photo-gallery {
+  &__card {
+    margin-bottom: 21px;
+  }
+  &__image:not(.photo-gallery__image--best) {
+    position: relative;
+    left: 20px;
+  }
+  &__image--best {
+    position: relative;
+  }
+  &__image--best::before {
+    content: "панорама дня";
+    display: block;
+    position: absolute;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    color: #ffffff;
+  }
+  &__author {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__time-register {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #283645;
+    margin: 0;
+    line-height: 25px;
+    width: 254px;
+  }
+  &__wrapper {
+    background-color: @grey-light;
+    background-size: 280px 192px;
+    margin: 0 20px 0 20px;
+    padding: 19px 17px 15px;
+  }
+  &__like-area {
+    margin: 8px 33px;
+  }
+  &__like-point {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @red;
+    position: relative;
+  }
+  &__like-point::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 2px;
+    width: 13px;
+    height: 12px;
+    background: url("../../img/icon-heart.svg");
+  }
+}
