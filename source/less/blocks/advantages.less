@@ -4,28 +4,58 @@
   text-align: center;
   padding: 50px 0 0 0;
   overflow: hidden;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    line-height: 24px;
+    font-size: 18px;
+  }
+
+  &__image-mobile {
+    display: block;
+    top: 42px;
+    position: relative;
+    margin: -33px 0 0 62px;
+  }
+
+  &__image-tablet {
+    display: none;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    padding: 13px 0 30px 0;
+  }
 }
 
-.advantages__title {
-  margin: 0;
-  font-weight: 700;
-  line-height: 24px;
-  font-size: 18px;
-  padding: 0;
+@media (min-width: 660px) {
+  .advantages {
+    text-align: left;
+    margin: 69px 0 0 0;
+    overflow: unset;
+    /*временно height*/
+    height: 462px;
+
+    &__wrapper {
+      margin-left: 50%;
+    }
+
+    &__image-mobile {
+      display: none;
+    }
+
+    &__image-tablet {
+      display: block;
+      top: -465px;
+      position: relative;
+    }
+  }
 }
 
-.advantages__image {
-  display: block;
-  top: 42px;
-  position: relative;
-  margin: -33px 0 0 83px;
-}
 
-.advantages__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  width: 298px;
-  padding: 13px 0 30px 20px;
+@media (min-width: 1200px) {
 }
