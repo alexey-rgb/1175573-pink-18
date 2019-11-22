@@ -11,6 +11,7 @@
 
   &__item {
     margin: 0;
+    display: block;
   }
 
   &__name {
@@ -83,6 +84,11 @@
 
 @media (min-width: 660px) {
   .reviews {
+
+    &__item {
+      display: none;
+    }
+
     &__item-reverse {
       display: flex;
       flex-direction: column-reverse;
@@ -104,6 +110,7 @@
       font-weight: 400;
       line-height: 30px;
     }
+
     &__wrapper::after {
       content: "";
       display: block;

@@ -116,5 +116,57 @@
 @media (min-width: 660px) {
   .price {
     margin-top: 87px;
+    min-height: 327px;
+
+    &__table {
+      table-layout: fixed;
+      width: 620px;
+      right: 0;
+      top: 41px;
+    }
+
+    &__header {
+      width: 154px;
+      min-height: 75px;
+    }
+
+    &__name {
+      font-size: 16px;
+      margin: 0;
+      padding-top: 8px;
+    }
+
+    &__price {
+      font-size: 18px;
+      transform: translateY(-2px)
+    }
+
+    &__feature--name {
+      display: none;
+    }
+
+    &__feature {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: none;
+    }
+
+    &__item {
+      padding: 9px 17px;
+    }
+
+    &__feature-status--on::before {
+      right: 58px;
+    }
+
+    &__feature-status--off::before {
+      right: 58px;
+      top: 11px;
+    }
+
+    &__control {
+      display: none;
+    }
   }
 }
