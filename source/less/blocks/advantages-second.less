@@ -5,65 +5,136 @@
 @media (min-width: 660px) {
   .advantages-second {
     display: block;
-    &__wrapper {
-      position: relative;
-      margin: 15% 0 19% 50%;
+  }
 
-      &::before {
-        content: "";
-        position: absolute;
-        right: 120%;
-        bottom: -2%;
-        width: 252px;
-        height: 278px;
-        background: no-repeat url("../img/timer.svg.png");
-      }
+  .advantages-second__wrapper {
+    position: relative;
+    margin: 15% 0 19% 50%;
 
-      &::after {
-        content: "";
-        position: absolute;
-        right: 130%;
-        bottom: 6%;
-        width: 202px;
-        height: 202px;
-        background: no-repeat url("../img/diagram-fill.svg.png");
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      right: 119%;
+      bottom: -10%;;
+      width: 252px;
+      height: 278px;
+      background: no-repeat url("../img/timer.svg.png");
     }
 
-    &__title {
-      font-size: 30px;
-      font-weight: 700;
-      line-height: 36px;
-      position: relative;
-      margin: 0;
-
-      &::before {
-        content: "24";
-        color: #d22856;
-        font-size: 100px;
-        display: block;
-        position: absolute;
-        right: 145%;
-        top: 129%;
-      }
+    &::after {
+      content: "";
+      position: absolute;
+      right: 129%;
+      bottom: 1px;
+      width: 202px;
+      height: 202px;
+      background: no-repeat url("../img/diagram-fill.svg.png");
     }
+  }
 
-    &__title-bottom {
-      display: block;
-    }
+  .advantages-second__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    position: relative;
+    margin: 0;
 
-    &__text {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      margin-top: 9px;
-    }
-
-    &__red-text {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
+    &::before {
+      content: "24";
       color: #d22856;
+      font-size: 100px;
+      display: block;
+      position: absolute;
+      right: 145%;
+      top: 129%;
     }
+  }
+
+  .advantages-second__title-bottom {
+    display: block;
+  }
+
+  .advantages-second__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 9px;
+  }
+
+  .advantages-second__red-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #d22856;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages-second {
+    background-color: @grey-light;
+    padding-top: 25vh;
+    padding-bottom: 110px;
+  }
+
+  .advantages-second__text {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .advantages-second__title-bottom {
+    display: inline;
+  }
+
+  .advantages-second__wrapper {
+    margin: 0 0 0 41%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 107%;
+      bottom: -27%;
+      width: 317px;
+      height: 358px;
+      background: no-repeat url("../img/timer-desktop.png");
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      right: 113%;
+      bottom: -13%;
+      width: 256px;
+      height: 259px;
+      background: no-repeat url("../img/diagram-fill-desktop.png");
+    }
+  }
+
+  .advantages-second__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: "24";
+      color: #d22856;
+      font-size: 120px;
+      display: block;
+      position: absolute;
+      right: 122%;
+      top: 218%;
+    }
+  }
+
+  .advantages-second__text {
+    line-height: 27px;
+    margin: 25px 0 38px 0;
+    width: 523px;
+  }
+
+  .advantages-second__red-text {
+    font-size: 18px;
+    text-decoration: underline;
   }
 }

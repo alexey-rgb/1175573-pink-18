@@ -1,20 +1,63 @@
-/* страница с фотографиями */
+.photo-gallery-block__section {
+  text-align: center;
+  .after-header-block();
+}
 
-.photo-gallery-block {
-  &__section {
+.photo-gallery-block__title {
+  margin: 24px 0 52px 0;
+}
+
+.photo-gallery-block__text {
+  .slogan();
+}
+
+.photo-gallery-block__text-position {
+  display: block;
+}
+
+@media (min-width: 660px) {
+  .photo-gallery-block__section {
+    background: url("../img/bg-back-tablet.jpg");
     text-align: center;
-    .after-header-block()
+    background-position: -41vw -10vh;
+
   }
 
-  &__title {
-    margin: 24px 0 52px 0;
+  .photo-gallery-block__title {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 55px;
+    margin: 73px 0 110px 0;
   }
 
-  &__text {
-    .slogan();
+  .photo-gallery-block__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 93px 48px 76px 50px;
   }
 
-  &__text-position {
+  .photo-gallery-block__text-position {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-gallery-block__section {
+    background: url("../img/bg-back-desktop.jpg");
+    text-align: center;
+    background-position: -56vw -7vh;
+  }
+
+  .photo-gallery-block__title {
+    margin: 59px 256px 74px 259px;
+  }
+
+  .photo-gallery-block__text-position:last-child {
     display: block;
+  }
+
+  .photo-gallery-block__text {
+    margin-bottom: 87px;
   }
 }

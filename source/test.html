@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div::before {
+      content: "";
+      display: block;
+      width: 150px;
+      height: 150px;
+      border: 10px solid #2aab6d;
+      border-radius: 50%;
+      border-bottom-color: transparent;
+      border-right-color: transparent;
+      background-color: #e5e5e5;
+    }
+
+    div::after {
+      content: "";
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #2aab6d;
+    }
+  </style>
+</head>
+<body>
+<label for="1"></label>
+<label for="2"></label>
+<input id="1" type="text" style="width: 200px; height: 30px; background-color: #d8456d; text-align: center" placeholder="Отправить">
+<input id="2" type="text" style="width: 200px; height: 30px; background-color: #d8456d; text-align: center" placeholder="Отмена">
+<div></div>
+</body>
+</html>

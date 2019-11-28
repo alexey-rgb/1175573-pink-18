@@ -1,25 +1,25 @@
 .main-nav {
   position: relative;
+}
 
-  &__link {
-    color: #fff;
-  }
+.main-nav__link {
+  color: #ffffff;
+}
 
-  &__list {
-    text-align: center;
-    padding-left: 0;
-    margin: 0;
-  }
+.main-nav__list {
+  text-align: center;
+  padding-left: 0;
+  margin: 0;
+}
 
-  &__toggle {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    background-color: white;
-  }
+.main-nav__toggle {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  background-color: white;
 
-  &__toggle::before {
+  &::before {
     content: "";
     position: absolute;
     width: 28px;
@@ -28,16 +28,16 @@
     left: 69px;
   }
 
-  &__toggle::after {
+  &::after {
     content: "";
     position: absolute;
     width: 28px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     left: 69px;
   }
 
-  &__toggle--close {
+  &--close {
     position: absolute;
     left: 263px;
     top: -52px;
@@ -46,22 +46,22 @@
     border: none;
   }
 
-  &__toggle--close::before {
+  &--close::before {
     content: "";
     position: absolute;
     width: 28px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     left: 12px;
     transform: rotate(135deg);
   }
 
-  &__toggle--close::after {
+  &--close::after {
     content: "";
     position: absolute;
     width: 28px;
     height: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
     left: 12px;
     transform: rotate(45deg);
   }
@@ -71,8 +71,8 @@
   .main-nav {
     &__toggle--close {
       position: absolute;
-      left: 120vh;
-      top: -13vh;
+      left: 118vh;
+      top: -14vh;
       background-color: @grey;
       outline: none;
       border: none;
