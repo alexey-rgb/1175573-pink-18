@@ -33,5 +33,16 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+    position: relative;
+    border: none;
+    &--current::before {
+      content: "";
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      background-color: #ffffff;
+      bottom: 0;
+      left: 0;
+    }
   }
 }
