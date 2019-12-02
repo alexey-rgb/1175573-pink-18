@@ -1,12 +1,16 @@
 .page-header {
   background-color: @grey;
-  margin: 0 auto;
+  margin-bottom: -64px;
+  z-index: 2;
+  position: relative;
 
-  &--close {
-    margin-bottom: -64px;
+  /*&--close {
+    min-height: 66px;
+    margin-bottom: -73px;
     z-index: 2;
     position: relative;
-  }
+    background-color: rgba(0, 0, 0, 0.6);
+  }*/
 }
 
 .page-header__logo-mobile {
@@ -14,6 +18,19 @@
   padding-left: 20px;
   padding-top: 22px;
   margin-bottom: 18px;
+}
+
+.page-header__logo-mobile-svg {
+  fill: #ffffff;
+}
+
+.page-header__logo-mobile:hover .page-header__logo-mobile-svg {
+  fill: #d22856;
+}
+
+.page-header__logo-mobile:active .page-header__logo-mobile-svg {
+  fill: #ffffff;
+  opacity: 0.3;
 }
 
 .page-header__logo-tablet {
@@ -28,6 +45,11 @@
 
   .page-header {
     width: 100%;
+    min-height: 110px;
+
+    /*&--close {
+      margin-bottom: -111px;
+    }*/
   }
 
   .page-header__logo-mobile {
@@ -43,6 +65,19 @@
     padding-left: 20px;
     padding-top: 26px;
     margin-bottom: 35px;
+  }
+
+  .page-header__logo-tablet-svg {
+    fill: #ffffff;
+  }
+
+  .page-header__logo-tablet:hover .page-header__logo-tablet-svg {
+    fill: #d22856;
+  }
+
+  .page-header__logo-tablet:active .page-header__logo-tablet-svg {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }
 
@@ -67,6 +102,18 @@
     padding-left: 131px;
     padding-top: 28px;
     margin-bottom: 34px;
+    position: relative;
+  }
+
+  .page-header__logo-desktop:hover::before {
+    content: "";
+    position: absolute;
+    background: no-repeat url("../img/logo-pink-blue-mobile - Copy.svg");
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__logo-desktop:active {
+    opacity: 0.1;
   }
 }
-

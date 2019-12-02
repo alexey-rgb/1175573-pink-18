@@ -52,10 +52,19 @@
   .form-main__input();
 }
 
+.form-main__input:hover {
+  border: 2px solid #000000;
+}
+
+.form-main__input:active {
+  border: 2px solid #d22856;
+}
+
 .form-main__slogan {
   margin: 0 0 41px;
   text-align: center;
   .form-main__slogan();
+
   &--checkbox {
     width: 252px;
     text-align: center;
@@ -70,6 +79,23 @@
 .form-main__item {
   margin-bottom: 50px;
   position: relative;
+}
+
+.form-main__checkbox {
+  transform: translateX(-35px);
+}
+
+.form-main__checkbox:hover ~ .form-main__label-checkbox::before {
+  border: 2px solid #000000;
+}
+
+.form-main__checkbox:active ~ .form-main__label-checkbox::before {
+  border: 2px solid #d22856;
+}
+
+.form-main__label-checkbox {
+  .text-decoration-form();
+  position: relative;
 
   &::before {
     content: "";
@@ -81,14 +107,6 @@
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
   }
-}
-
-.form-main__checkbox {
-  transform: translateX(-35px);
-}
-
-.form-main__label-checkbox {
-  .text-decoration-form();
 }
 
 .form-main__third-block {
@@ -111,25 +129,33 @@
 .form-main__item-second {
   position: relative;
   padding-bottom: 40px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: -29px;
-    bottom: 38px;
-    width: 35px;
-    height: 35px;
-    border: 2px solid #e5e5e5;
-    border-radius: 50%;
-    background-color: #ffffff;
-  }
 }
 
 .form-main__radio {
   transform: translate(-28px, 6px);
   width: 32px;
   height: 26px;
-  opacity: 0;
+  opacity: 1;
+}
+
+.form-main__label-radio::after {
+  content: "";
+  position: absolute;
+  left: -29px;
+  bottom: 38px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.form-main__radio:hover ~ .form-main__label-radio::after {
+  border: 2px solid #000000;
+}
+
+.form-main__radio:active ~ .form-main__label-radio::after {
+  border: 2px solid #d22856;
 }
 
 .form-main__five-block {
@@ -186,12 +212,13 @@ input[type="checkbox"]:disabled + .form-main__label-checkbox::after {
 input[type="radio"]:checked + .form-main__label-radio::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: -19px;
   bottom: 48px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
   background-color: #d22856;
+  z-index: 2;
 }
 
 input[type="radio"]:disabled + .form-main__label-radio::before {
@@ -261,21 +288,21 @@ input[type="radio"]:disabled + .form-main__label-radio::before {
 
       &:first-of-type::before {
         content: "";
-        left: 63vw;
+        left: 74%;
         bottom: 39px;
         position: absolute;
-        width: 60px;
-        height: 60px;
+        width: 59px;
+        height: 59px;
         background: center no-repeat url("../img/phone.svg.png") #e5e5e5;
       }
 
       &:first-of-type::after {
         content: "";
-        left: 63vw;
+        left: 74%;
         bottom: -90px;
         position: absolute;
-        width: 60px;
-        height: 60px;
+        width: 59px;
+        height: 59px;
         background: center no-repeat url("../img/mail.svg.png") #e5e5e5;
       }
     }
@@ -286,7 +313,7 @@ input[type="radio"]:disabled + .form-main__label-radio::before {
     margin-left: 95px;
 
     &--tablet {
-      width: 81.1%;
+      width: 89%;
       margin: 0 0 36px 0;
     }
 
@@ -384,10 +411,6 @@ input[type="radio"]:disabled + .form-main__label-radio::before {
   left: -20px;
 }
 
-input[type="radio"]:checked + .form-main__label-radio::before {
-  left: -11px;
-}
-
 @media (min-width: 1200px) {
   .form-main {
     margin-top: -30px;
@@ -482,17 +505,17 @@ input[type="radio"]:checked + .form-main__label-radio::before {
   }
 
   .form-main__label--contacts:first-of-type::after {
-    bottom: 43px;
-    left: 738px;
-    width: 62px;
-    height: 62px;
+    bottom: 44px;
+    left: 737px;
+    width: 59px;
+    height: 59px;
   }
 
   .form-main__label--contacts:first-of-type::before {
-    left: 292px;
-    bottom: 43px;
-    width: 62px;
-    height: 62px;
+    left: 281px;
+    bottom: 44px;
+    width: 59px;
+    height: 59px;
 
   }
 
@@ -513,7 +536,7 @@ input[type="radio"]:checked + .form-main__label-radio::before {
   }
 
   .form-main__input--tablet {
-    width: 40%;
+    width: 41%;
     margin: 0;
   }
 

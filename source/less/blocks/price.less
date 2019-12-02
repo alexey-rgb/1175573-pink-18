@@ -86,11 +86,12 @@
   content: "";
   display: block;
   position: absolute;
-  right: 0;
-  top: 21px;
-  width: 31px;
-  height: 21px;
+  right: 13px;
+  top: 19px;
+  width: 32px;
+  height: 22px;
   background: no-repeat url("../img/icon-yes.svg");
+  background-size: contain;
 }
 
 .price__feature-status--off {
@@ -101,11 +102,12 @@
   content: "";
   display: block;
   position: absolute;
-  right: 0;
-  top: 21px;
-  width: 31px;
-  height: 21px;
+  right: 14px;
+  top: 15px;
+  width: 30px;
+  height: 28px;
   background: no-repeat url("../img/icon-no.svg");
+  background-size: contain;
 }
 
 .price__control {
@@ -114,9 +116,92 @@
   left: 107px;
 }
 
+.price__switcher {
+  visibility: hidden;
+}
+
+.slider__control-button {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    opacity: 0.3;
+    border-radius: 50%;
+  }
+
+  &:nth-of-type(1)::before {
+    top: 5px;
+    left: -13px;
+  }
+
+  &:nth-of-type(2)::before {
+    top: 5px;
+    left: -3px;
+  }
+
+  &:nth-of-type(3)::before {
+    top: 5px;
+    left: 9px;
+  }
+}
+
+.slider__control-button:hover::before {
+  opacity: 0.6;
+}
+
+.slider__control-button:active::before {
+  opacity: 0.1;
+}
+
+input[type="radio"]:checked + .slider__control-button:nth-of-type(1)::after {
+  position: absolute;
+  top: 3px;
+  left: -18px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+input[type="radio"]:checked + .slider__control-button:nth-of-type(2)::after {
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .slider__control-button:nth-of-type(3)::after {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #000000;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + .slider__control-button::before {
+  display: none;
+}
+
 @media (min-width: 660px) {
   .price {
-    margin-top: 17px;
+    margin-top: 87px;
     min-height: 327px;
   }
 
@@ -174,7 +259,7 @@
 
 @media (min-width: 1200px) {
   .price {
-    margin: -77px 0 0 0;
+    margin: 75px 0 0 0;
     padding-top: 5px;
     min-height: 439px;
   }
