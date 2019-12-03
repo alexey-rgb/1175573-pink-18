@@ -4,32 +4,36 @@
   text-align: center;
   padding: 50px 0 0 0;
   overflow: hidden;
+}
 
-  &__title {
-    margin: 0;
-    font-weight: 700;
-    line-height: 24px;
-    font-size: 18px;
-  }
+.advantages__title {
+  margin: 0;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 18px;
+}
 
-  &__image-mobile {
-    display: block;
-    top: 42px;
-    position: relative;
-    margin: -33px 0 0 62px;
-  }
+.advantages__image-mobile {
+  display: block;
+  top: 42px;
+  position: relative;
+  margin: -33px 0 0 62px;
+}
 
-  &__image-tablet {
-    display: none;
-  }
+.advantages__image-tablet {
+  display: none;
+}
 
-  &__text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0;
-    padding: 13px 0 30px 0;
-  }
+.advantages__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding: 13px 0 30px 0;
+}
+
+.advantages__image-garbage-place {
+  display: none;
 }
 
 @media (min-width: 660px) {
@@ -37,25 +41,71 @@
     text-align: left;
     margin: 69px 0 0 0;
     overflow: unset;
-    /*временно height*/
-    height: 462px;
+    padding-bottom: 18px;
+  }
 
-    &__wrapper {
-      margin-left: 50%;
-    }
+  .advantages__wrapper {
+    margin-left: 50%;
+    position: relative;
+  }
 
-    &__image-mobile {
-      display: none;
-    }
+  .advantages__image-mobile {
+    display: none;
+  }
 
-    &__image-tablet {
-      display: block;
-      top: -465px;
-      position: relative;
-    }
+  .advantages__image-tablet {
+    display: block;
+    top: -72px;
+    left: -100%;
+    position: absolute;
+  }
+
+  .advantages__image-garbage-place {
+    display: none;
   }
 }
 
 
 @media (min-width: 1200px) {
+  .advantages {
+    margin: 169px 0 0 0;
+    min-height: 462px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 58px 26px 18px 45px;
+  }
+
+  .advantages__title-second-floor {
+    display: block;
+  }
+
+  .advantages__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .advantages__image-mobile {
+    display: none;
+  }
+
+  .advantages__image-tablet {
+    display: none;
+  }
+
+  .advantages__wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: -150px 0 0 110px;
+    width: 939px;
+  }
+
+  .advantages__image-garbage-place {
+    display: block;
+  }
 }
