@@ -2,17 +2,23 @@
   text-align: center;
   position: relative;
   min-width: 320px;
-  background: no-repeat url("../img/background-mobile.jpg");
+  background: no-repeat url("../img/bg-back-mobile@1x.jpg");
   margin: 0;
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
-  padding: 70px 0 32px;
+  padding: 70px 0 85px;
   line-height: 28px;
+  @media(min-resolution: 1.5dppx) {
+    background: no-repeat url("../img/bg-back-mobile@2x.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    padding: 70px 0 85px;
+  }
 }
 
 .photo-gallery-block__title {
-  margin: 24px 0 52px 0;
+  margin: 24px 0 0 0;
 }
 
 .photo-gallery-block__text {

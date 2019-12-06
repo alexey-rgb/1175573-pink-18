@@ -4,13 +4,62 @@
   z-index: 2;
   position: relative;
 
-  /*&--close {
+  &--close {
     min-height: 66px;
     margin-bottom: -73px;
     z-index: 2;
     position: relative;
     background-color: rgba(0, 0, 0, 0.6);
-  }*/
+
+    .main-nav__toggle--close::before,
+    .main-nav__toggle--close::after {
+      display: none;
+    }
+
+    .main-nav__toggle {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      right: 20px;
+      top: -54px;
+      border: none;
+
+      &--open {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        right: 20px;
+        top: -54px;
+        background: no-repeat url("../img/icon-menu-burger.svg");
+        border: none;
+
+        &:hover {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          top: -54px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+        }
+
+        &:active {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          top: -54px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .site-list {
+      display: none;
+    }
+  }
 }
 
 .page-header__logo-mobile {
