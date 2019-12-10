@@ -151,10 +151,22 @@
     padding-left: 131px;
     padding-top: 28px;
     margin-bottom: 34px;
-    position: relative;
   }
 
-  .page-header__logo-desktop:hover::before {
+  .page-header__logo-desktop-svg {
+    fill: #ffffff;
+  }
+
+  .page-header__logo-desktop:hover .page-header__logo-desktop-svg {
+    fill: #d22856;
+  }
+
+  .page-header__logo-desktop:active .page-header__logo-desktop-svg {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+
+ /* .page-header__logo-desktop:hover::before {
     content: "";
     position: absolute;
     background: no-repeat url("../img/logo-pink-blue-mobile - Copy.svg");
@@ -164,5 +176,5 @@
 
   .page-header__logo-desktop:active {
     opacity: 0.1;
-  }
+  }*/
 }
