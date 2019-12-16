@@ -91,24 +91,22 @@
   display: none;
 }
 
-.page-footer__logo-top-link:hover .page-footer__logo-image-first {
-  display: none;
+.page-footer__logo-pink-wrapper {
+  height: 41px;
+  display: block;
+  margin-left: 66px;
 }
 
-.page-footer__logo-top-link:hover .page-footer__logo-image-second {
-  display: inline;
+.page-footer__logo-pink-link:hover .page-footer__logo-pink-image {
+  fill: @red;
 }
 
-.page-footer__logo-top-link:active .page-footer__logo-image-first {
+.page-footer__logo-pink-link:active .page-footer__logo-pink-image {
   opacity: 0.3;
-  display: inline;
+  fill: #000000;
 }
 
-.page-footer__logo-top-link:active .page-footer__logo-image-second {
-  display: none;
-}
-
-.page-footer__logo-bottom-text {
+.page-footer__text-htmlacademy {
   color: #283645;
   font-family: @font;
   font-size: 14px;
@@ -116,23 +114,20 @@
   line-height: 18px;
 }
 
-.page-footer__logo-bottom-link {
-  min-height: 50px;
-}
-
-.page-footer__logo-bottom-image {
+.page-footer__image-htmlacademy {
   fill: #d22856;
 }
 
-.page-footer__logo-bottom-link:hover .page-footer__logo-bottom-image {
+.page-footer__link-htmlacademy:hover .page-footer__image-htmlacademy {
   fill: #000000;
 }
 
-.page-footer__logo-bottom-link:active .page-footer__logo-bottom-image {
+.page-footer__link-htmlacademy:active .page-footer__image-htmlacademy {
   opacity: 0.3;
+  fill: #000000;
 }
 
-.page-footer__logo-bottom-image {
+.page-footer__image-htmlacademy {
   transform: translate(7px, 12px);
 }
 
@@ -144,8 +139,12 @@
   display: block;
 }
 
-.page-footer__logo-bottom {
+.page-footer__block-htmlacademy {
   margin-bottom: 40px;
+}
+
+.page-footer__logo-pink-image-desktop {
+  display: none;
 }
 
 
@@ -164,7 +163,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+.page-footer__logo-pink-image-desktop {
+  display: none;
+}
+
+@media (min-width: 960px) {
 
   .page-footer--form {
     width: 81%;
@@ -181,5 +184,22 @@
     margin-top: 99px;
     width: 81%;
     margin-left: 110px;
+  }
+
+  .page-footer__logo-pink-image-desktop {
+    display: block;
+  }
+
+  .page-footer__logo-pink-image-desktop:hover {
+    fill: @red;
+  }
+
+  .page-footer__logo-pink-image-desktop:active {
+    fill: #000000;
+    opacity: 0.3;
+  }
+
+  .page-footer__logo-pink-image {
+    display: none;
   }
 }

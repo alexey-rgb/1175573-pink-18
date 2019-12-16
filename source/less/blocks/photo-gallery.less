@@ -2,15 +2,11 @@
   margin-bottom: 23px;
 }
 
-.photo-gallery__image:not(.photo-gallery__image--best) {
+.photo-gallery__image-wrapper {
   position: relative;
 }
 
-.photo-gallery__image--best {
-  position: relative;
-}
-
-.photo-gallery__image--best::before {
+.photo-gallery__image-wrapper--best::before {
   content: "панорама дня";
   display: block;
   position: absolute;
@@ -82,44 +78,30 @@
   }
 }
 
-
-.photo-gallery__image-tablet {
-  display: none;
-}
-
-.photo-gallery__image-desktop {
-  display: none;
-}
-
 @media (min-width: 660px) {
-  .photo-gallery__image-mobile {
-    display: none;
+
+  .photo-gallery__image:not(.photo-gallery__image--panorama) {
+    width: 100%;
+    height: auto;
   }
 
-  .photo-gallery__image-desktop {
-    display: none;
+  .photo-gallery__image--panorama {
+    width: 100%;
+    height: 89vh;
   }
 
-  .photo-gallery__image-tablet {
-    display: block;
-
-    &--panorama {
-      /*max-width: initial;
-      position: relative;*/
-      left: -3vw;
-      height: 509px;
-    }
+  .photo-gallery__image-post {
+    width: 82vw;
   }
 
-  .photo-gallery__image {
-    overflow: hidden;
+  .photo-gallery__wrapper--panorama {
+    padding: 22px 0 0 29px;
+    min-height: 102px;
   }
 
-  .photo-gallery__image {
-    &--best::before {
+  .photo-gallery__image-wrapper--best::before {
       top: 57px;
       z-index: 1;
-    }
   }
 
   .photo-gallery__like-point--panorama {
@@ -159,15 +141,15 @@
 
   .photo-gallery__wrapper {
     margin: -10px 0 -2px 0;
-    padding: 32px 0 0 27px;
-    min-height: 165px;
+    padding: 22px 0 0 27px;
+    min-height: 155px;
     display: flex;
     flex-direction: column;
 
     &--panorama {
       width: 620px;
       margin-left: 20px;
-      padding: 32px 0 0 29px;
+      padding: 22px 0 0 29px;
       min-height: 121px;
     }
   }
@@ -189,28 +171,21 @@
 }
 
 @media (min-width: 1200px) {
-  .photo-gallery__image-mobile {
-    display: none;
-  }
-
-  .photo-gallery__image-tablet {
-    display: none;
-  }
-
-  .photo-gallery__image-desktop {
-    display: block;
-  }
 
   .photo-gallery__wrapper--panorama {
     width: 940px;
     margin-left: 130px;
-    min-height: 107px;
-    padding: 32px 0 0 27px;
-  }
+    min-height: 95px;
+    padding: 21px 0 0 27px;
+}
 
   .photo-gallery__like-area-panorama {
     left: 60vw;
     top: -7vh;
+  }
+
+  .photo-gallery__image--panorama {
+    height: 80vh;
   }
 
   .photo-gallery__image--best::before {
@@ -223,6 +198,11 @@
 
   .photo-gallery__card {
     margin-bottom: 53px;
+  }
+
+  .photo-gallery__wrapper:not(.photo-gallery__wrapper--panorama) {
+    padding: 22px 0 0 27px;
+    min-height: 157px;
   }
 }
 

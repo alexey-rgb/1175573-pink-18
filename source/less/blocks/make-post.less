@@ -32,16 +32,32 @@
   position: relative;
 }
 
-.make-post__svg {
+.make-post__item:nth-of-type(1) .make-post__item-control {
+  width: 44px;
+  height: 44px;
+}
+
+.make-post__item:nth-of-type(2) .make-post__item-control {
+  width: 48px;
+  height: 43px;
+}
+
+.make-post__item:nth-of-type(3) .make-post__item-control {
+  width: 32px;
+  height: 32px;
+}
+
+.make-post__item-control {
+  fill: #283645;
   opacity: 0.3;
 }
 
-.make-post__item:hover .make-post__svg {
+.make-post__item-control:hover {
   opacity: 0.5;
 }
 
-.make-post__item:active .make-post__svg {
-  fill: #d22856;
+.make-post__item-control:active {
+  fill: @red;
   opacity: 1;
 }
 
@@ -363,6 +379,21 @@
     bottom: 32px;
     right: 60px;
     width: 299px;
+  }
+
+  .make-post__item:nth-of-type(1) .make-post__item-control {
+    width: 44px;
+    height: 44px;
+  }
+
+  .make-post__item:nth-of-type(2) .make-post__item-control {
+    width: 48px;
+    height: 43px;
+  }
+
+  .make-post__item:nth-of-type(3) .make-post__item-control {
+    width: 32px;
+    height: 32px;
   }
 
   .make-post__list::before {

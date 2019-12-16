@@ -66,10 +66,11 @@
     font-weight: 400;
     line-height: 24px;
     color: #d22856;
+    text-decoration: underline;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .advantages-second {
     background-color: @grey-light;
     padding-top: 29vh;
@@ -96,6 +97,11 @@
       width: 317px;
       height: 358px;
       background: no-repeat url("../img/timer-desktop.png");
+      @media (min-resolution: 1.5dppx) {
+        background: no-repeat url("../img/bg-back-desktop@2x.jpg");
+        background-size: 213% 102%;
+        background-position: center top;
+      }
     }
 
     &::after {
@@ -135,6 +141,5 @@
 
   .advantages-second__red-text {
     font-size: 18px;
-    text-decoration: underline;
   }
 }
