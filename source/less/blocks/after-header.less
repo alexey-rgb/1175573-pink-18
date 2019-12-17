@@ -2,12 +2,12 @@
   position: relative;
   min-width: 320px;
   background: no-repeat url("../img/bg-back-mobile@1x.jpg");
-  background-size: contain;
+  background-size: 100%;
   margin: 0;
   padding-top: 64px;
   @media (min-resolution: 1.5dppx) {
     background: no-repeat url("../img/bg-back-mobile@2x.jpg");
-    background-size: contain;
+    background-size: 100%;
     background-position: center top;
   }
 }
@@ -15,8 +15,9 @@
 .after-header__image {
   display: block;
   padding-top: 26px;
+  margin: 0 auto;
   position: relative;
-  left: -20px;
+  left: -30px;
 }
 
 .after-header__title {
@@ -24,7 +25,7 @@
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   padding-top: 23px;
 }
