@@ -215,15 +215,19 @@ input[type="radio"]:checked + .slider__control-button::before {
 
 @media (min-width: 660px) {
   .price {
-    margin-top: 87px;
-    min-height: 327px;
+    margin-top: 37px;
+    min-height: 377px;
+    &::before {
+      bottom: 326px;
+      height: 51px;
+    }
   }
 
   .price__table {
     table-layout: fixed;
     width: 620px;
     right: 0;
-    top: 41px;
+    top: 91px;
   }
 
   .price__header {
@@ -273,9 +277,13 @@ input[type="radio"]:checked + .slider__control-button::before {
 
 @media (min-width: 960px) {
   .price {
-    margin: 75px 0 0 0;
-    padding-top: 5px;
-    min-height: 439px;
+    margin: 2px 0 0 0;
+    padding-top: 27px;
+    min-height: 517px;
+    &::before {
+      bottom: 452px;
+      height: 66px;
+    }
   }
 
   .price__inner {
@@ -284,9 +292,9 @@ input[type="radio"]:checked + .slider__control-button::before {
   }
 
   .price__table {
-    width: 81%;
-    left: 109px;
-    top: 56px;
+    width: 100%;
+    left: 0;
+    top: 107px;
   }
 
   .price__header {

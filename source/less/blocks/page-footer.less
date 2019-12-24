@@ -91,12 +91,6 @@
   display: none;
 }
 
-.page-footer__logo-pink-wrapper {
-  height: 41px;
-  display: block;
-  margin-left: 66px;
-}
-
 .page-footer__logo-pink-link:hover .page-footer__logo-pink-image {
   fill: @red;
 }
@@ -170,20 +164,21 @@
 @media (min-width: 960px) {
 
   .page-footer--form {
-    width: 81%;
-    margin-left: 110px;
+    width: 100%;
   }
 
   .page-footer--index {
     margin-top: 63px;
-    width: 81%;
-    margin-left: 110px;
+    width: 100%;
   }
 
   .page-footer--photo {
     margin-top: 99px;
-    width: 81%;
-    margin-left: 110px;
+    width: 100%;
+  }
+
+  .page-footer__logo-pink-wrapper {
+    margin: 0;
   }
 
   .page-footer__logo-pink-image-desktop {
@@ -201,5 +196,9 @@
 
   .page-footer__logo-pink-image {
     display: none;
+  }
+
+  .page-footer__text-htmlacademy {
+    font-size: 18px;
   }
 }

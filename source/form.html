@@ -13,7 +13,7 @@
   <h1 class="visually-hidden">
     Скачать приложение Pink и прочитать отзывы.
   </h1>
-  <a href="index.html" class="page-header__logo" aria-label="Логотип текущего приложения, ссылка на главную страницу">
+  <a class="page-header__logo" aria-label="Логотип текущего приложения, ссылка на главную страницу">
     <svg class="page-header__logo-tablet-svg page-header__logo-svg" width="146.3px" height="40.375px" focusable="false">
       <use xlink:href="img/sprite.svg#icon-pink-white-tablet">
       </use>
@@ -32,7 +32,7 @@
     </button>
     <ul class="main-nav__list site-list">
       <li class="site-list__item">
-        <a href="index.html" class="main-nav__link main-nav__link--current">
+        <a href="index.html" class="main-nav__link">
           Главная
         </a>
       </li>
@@ -97,15 +97,15 @@
         <div class="form-main__first-block">
           <div class="container">
             <div class="container__inner">
-          <label for="surname" class="form-main__label form-main__label--red-color">
+          <label for="surname" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Фамилия:
           </label>
           <input id="surname" type="text" placeholder="Укажите фамилию *" name="surname" class="form-main__input">
-          <label for="name" class="form-main__label form-main__label--red-color">
+          <label for="name" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Имя:
           </label>
           <input id="name" type="text" placeholder="Введите ваше имя *" name="name" class="form-main__input form-main__input--long">
-          <label for="text-first" class="form-main__label form-main__label--red-color">
+          <label for="text-first" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Отчество:
           </label>
           <input id="text-first" type="text" placeholder="Ну и отчество тоже" name="patronymic" class="form-main__input">
@@ -236,12 +236,16 @@
         </div>
           </div>
       <div class="container">
-        <div class="container__inner">
+        <div class="container__inner form-main__button-wrapper">
       <button type="submit" class="form-main__button button-green">
         Отправить форму
       </button>
       <small class="form-main__desc">
-        обязательные поля
+        * - обязательные
+        <span class="form-main__desc-hidden">
+          для заполнения
+        </span>
+        поля
       </small>
         </div>
       </div>
