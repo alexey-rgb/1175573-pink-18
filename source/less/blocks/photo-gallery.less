@@ -51,14 +51,18 @@
   background-color: @grey-light;
   margin: -10px 0 0 0;
   padding: 11px 0 5px 18px;
+  display: flex;
+  flex-direction: column;
 
   &--panorama {
     min-height: 191px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
 .photo-gallery__like-area {
-  margin: 8px 33px;
+  margin: 8px 32px;
 }
 
 .photo-gallery__like-point {
@@ -68,13 +72,6 @@
   text-transform: uppercase;
   color: @red;
   position: relative;
-  right: 1px;
-  bottom: 4px;
-
-  &--panorama {
-    left: 31px;
-    top: 5px;
-  }
 
   &::before {
     content: "";
@@ -100,12 +97,19 @@
   }
 
   .photo-gallery__image-post {
-    width: 82vw;
+    width: 100%;
   }
 
   .photo-gallery__wrapper--panorama {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 22px 0 0 29px;
     min-height: 102px;
+  }
+
+  .photo-gallery__author--panorama {
+    order: 0;
   }
 
   .photo-gallery__image-wrapper--best::before {
@@ -114,8 +118,7 @@
   }
 
   .photo-gallery__like-point--panorama {
-    left: 47px;
-    top: 1px;
+
     &::before {
       left: 104px;
       bottom: 5px;
@@ -123,9 +126,7 @@
   }
 
   .photo-gallery__like-point:not(.photo-gallery__like-point--panorama) {
-    position: relative;
-    bottom: 20px;
-    left: 1px;
+
     &::before {
       left: 228px;
       bottom: 1px;
@@ -133,20 +134,17 @@
   }
 
   .photo-gallery__like-area-panorama {
-    margin: 0;
-    position: relative;
-    left: 69%;
-    bottom: 78px;
-    width: 170px;
+    margin: 0 0 0 305px;
+    order: 1;
   }
 
-  .photo-gallery__like-area {
-    position: relative;
-    margin: auto 0 0 0;
+  .photo-gallery__like-area:not(.photo-gallery__like-area-panorama) {
+    margin: auto 0 18px;
   }
 
-  .photo-gallery__text {
-    margin: -5px 0;
+  .photo-gallery__text--panorama {
+    order: 2;
+    margin-top: -30px;
   }
 
   .photo-gallery__wrapper {
@@ -160,6 +158,9 @@
       width: 620px;
       padding: 22px 0 0 29px;
       min-height: 121px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 
@@ -188,10 +189,6 @@
     padding: 21px 0 0 27px;
 }
 
-  .photo-gallery__image-post {
-    width: 100%;
-  }
-
   .photo-gallery__like-area-panorama {
     left: 600px;
     top: -50px;
@@ -216,6 +213,10 @@
   .photo-gallery__wrapper:not(.photo-gallery__wrapper--panorama) {
     padding: 22px 0 0 27px;
     min-height: 157px;
+  }
+
+  .photo-gallery__like-area-panorama {
+    margin: 0 0 0 624px;
   }
 }
 

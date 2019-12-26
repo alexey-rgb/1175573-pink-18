@@ -134,7 +134,7 @@
   visibility: hidden;
 }
 
-.slider__control-button {
+.price__control-button {
   position: relative;
 
   &::before {
@@ -164,15 +164,15 @@
   }
 }
 
-.slider__control-button:hover::before {
+.price__control-button:hover::before {
   opacity: 0.6;
 }
 
-.slider__control-button:active::before {
+.price__control-button:active::before {
   opacity: 0.1;
 }
 
-input[type="radio"]:checked + .slider__control-button:nth-of-type(1)::after {
+input[type="radio"]:checked + .price__control-button:nth-of-type(1)::after {
   position: absolute;
   top: 3px;
   left: -18px;
@@ -185,7 +185,7 @@ input[type="radio"]:checked + .slider__control-button:nth-of-type(1)::after {
   opacity: 1;
 }
 
-input[type="radio"]:checked + .slider__control-button:nth-of-type(2)::after {
+input[type="radio"]:checked + .price__control-button:nth-of-type(2)::after {
   position: absolute;
   top: 3px;
   left: -10px;
@@ -197,7 +197,7 @@ input[type="radio"]:checked + .slider__control-button:nth-of-type(2)::after {
   border-radius: 50%;
 }
 
-input[type="radio"]:checked + .slider__control-button:nth-of-type(3)::after {
+input[type="radio"]:checked + .price__control-button:nth-of-type(3)::after {
   position: absolute;
   top: 3px;
   left: 5px;
@@ -209,7 +209,7 @@ input[type="radio"]:checked + .slider__control-button:nth-of-type(3)::after {
   border-radius: 50%;
 }
 
-input[type="radio"]:checked + .slider__control-button::before {
+input[type="radio"]:checked + .price__control-button::before {
   display: none;
 }
 

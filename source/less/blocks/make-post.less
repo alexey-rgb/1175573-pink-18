@@ -3,10 +3,14 @@
   text-align: center;
 }
 
+.make-post__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
 .make-post__image {
   margin: 0;
-  padding-top: 17px;
-  position: relative;
 }
 
 .make-post__image-mobile {
@@ -190,7 +194,9 @@
 
   .make-post__form {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    padding-top: 0;
   }
 
   .make-post__list {
@@ -220,6 +226,7 @@
   }
 
   .make-post__image {
+    min-width: 300px;
     margin-top: 57px;
     padding: 0;
   }
