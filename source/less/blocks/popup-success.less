@@ -1,4 +1,5 @@
 .popup-success {
+  display: none;
   width: 100%;
   min-height: 340px;
   text-align: center;
@@ -6,6 +7,13 @@
   padding-top: 7%;
   background-color: #ffffff;
   position: relative;
+
+  &--off {
+    display: block;
+    position: absolute;
+    bottom: 61vh;
+    left: 0;
+  }
 
   &::before {
     content: "";
@@ -52,6 +60,11 @@
   .popup-success {
     min-height: 432px;
     width: 460px;
+
+    &--off {
+      bottom: 34vh;
+      left: 15vw;
+    }
   }
 
   .popup-success__title {
@@ -77,12 +90,17 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
   .popup-success {
     width: 65%;
     min-height: 377px;
     position: relative;
     padding-top: 3%;
+
+    &--off {
+      bottom: 91vh;
+      left: 17vw;
+    }
 
     &::before {
       content: "";

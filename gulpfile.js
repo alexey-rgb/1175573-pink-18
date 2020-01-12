@@ -106,22 +106,6 @@ gulp.task("copy", function () {
     .pipe(gulp.dest("build"));
 });
 
-/*gulp.task("server", function () {
-  server.init({
-    server: "source/",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-
-   gulp.watch("source/", gulp.series("css"));
-   gulp.watch("source/*.html").on("change", server.reload);
-
- });*/
-
-
-
 gulp.task("server", function () {
   server.init({
     server: "build/",

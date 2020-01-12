@@ -1,5 +1,9 @@
 .photo-gallery__card {
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.photo-gallery .photo-gallery__card:nth-of-type(4) {
+  margin-bottom: 22px;
 }
 
 .photo-gallery__image-wrapper {
@@ -16,13 +20,16 @@
   height: 36px;
   background-color: #d22856;
   color: #ffffff;
+  padding: 0 0 0 20px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .photo-gallery__image {
   width: 100%;
 }
 
-.photo-gallery--panorama .container__inner {
+.photo-gallery__card--panorama .container__inner {
   display: flex;
   justify-content: center;
 }
@@ -43,14 +50,18 @@
   font-weight: 400;
   font-size: 14px;
   color: #283645;
-  margin: 0;
+  margin: -4px 0 0 0;
   line-height: 24px;
+
+  &--panorama {
+    margin-top: -4px;
+  }
 }
 
 .photo-gallery__wrapper {
   background-color: @grey-light;
   margin: -10px 0 0 0;
-  padding: 11px 0 5px 18px;
+  padding: 16px 0 5px 18px;
   display: flex;
   flex-direction: column;
 
@@ -58,11 +69,16 @@
     min-height: 191px;
     display: flex;
     flex-direction: column;
+    padding: 15px 0 5px 18px;
   }
 }
 
 .photo-gallery__like-area {
-  margin: 8px 32px;
+  margin: 5px 31px 13px 31px;
+
+  &--panorama {
+    margin: 6px 32px;
+  }
 }
 
 .photo-gallery__like-point {
@@ -85,7 +101,6 @@
 }
 
 @media (min-width: 660px) {
-
   .photo-gallery__image:not(.photo-gallery__image--panorama) {
     width: 100%;
     height: auto;
@@ -100,25 +115,16 @@
     width: 100%;
   }
 
-  .photo-gallery__wrapper--panorama {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 22px 0 0 29px;
-    min-height: 102px;
-  }
-
   .photo-gallery__author--panorama {
     order: 0;
   }
 
   .photo-gallery__image-wrapper--best::before {
-      top: 57px;
-      z-index: 1;
+    top: 57px;
+    z-index: 1;
   }
 
   .photo-gallery__like-point--panorama {
-
     &::before {
       left: 104px;
       bottom: 5px;
@@ -126,20 +132,19 @@
   }
 
   .photo-gallery__like-point:not(.photo-gallery__like-point--panorama) {
-
     &::before {
       left: 228px;
       bottom: 1px;
     }
   }
 
-  .photo-gallery__like-area-panorama {
-    margin: 0 0 0 305px;
-    order: 1;
-  }
-
-  .photo-gallery__like-area:not(.photo-gallery__like-area-panorama) {
+  .photo-gallery__like-area {
     margin: auto 0 18px;
+
+    &--panorama {
+      margin: 0 0 0 305px;
+      order: 1;
+    }
   }
 
   .photo-gallery__text--panorama {
@@ -153,14 +158,15 @@
     min-height: 155px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 
     &--panorama {
-      width: 620px;
-      padding: 22px 0 0 29px;
-      min-height: 121px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      width: 620px;
+      padding: 19px 0 0 27px;
+      min-height: 122px;
     }
   }
 
@@ -168,30 +174,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px 0 21px 0;
+    margin: 50px 0 23px 0;
   }
 
-  .photo-gallery__card:not(.photo-gallery--panorama) {
+  .photo-gallery__card:not(.photo-gallery__card--panorama) {
     width: 300px;
+    margin-bottom: 22px;
+  }
+
+  .photo-gallery__card--panorama {
+    margin-bottom: 51px;
   }
 
   .photo-gallery__card .container {
     padding: 0;
   }
+
+  .photo-gallery__text--line-break {
+    padding: 0 10px 0 0;
+  }
 }
 
 @media (min-width: 960px) {
-
   .photo-gallery__wrapper--panorama {
     width: 940px;
     margin-left: 0;
     min-height: 95px;
     padding: 21px 0 0 27px;
-}
+  }
 
-  .photo-gallery__like-area-panorama {
-    left: 600px;
-    top: -50px;
+  .photo-gallery__like-area {
+    margin: auto 0 21px;
+  }
+
+  .photo-gallery__like-area--panorama {
+    margin: 0 0 0 623px;
   }
 
   .photo-gallery__image--panorama {
@@ -210,13 +227,21 @@
     margin-bottom: 53px;
   }
 
+  .photo-gallery__card:not(.photo-gallery__card--panorama) {
+    margin-bottom: 53px;
+  }
+
   .photo-gallery__wrapper:not(.photo-gallery__wrapper--panorama) {
     padding: 22px 0 0 27px;
     min-height: 157px;
   }
 
-  .photo-gallery__like-area-panorama {
-    margin: 0 0 0 624px;
+  .photo-gallery__image-wrapper--best::before {
+    top: 54px;
+    right: 10px;
+  }
+
+  .photo-gallery__text--panorama {
+    margin-top: -26px;
   }
 }
-

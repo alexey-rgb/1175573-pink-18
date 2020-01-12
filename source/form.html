@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--flag page-header--close page-header--no-js">
   <h1 class="visually-hidden">
     Скачать приложение Pink и прочитать отзывы.
   </h1>
-  <a class="page-header__logo" aria-label="Логотип текущего приложения, ссылка на главную страницу">
+  <a href="index.html" class="page-header__logo" aria-label="Логотип текущего приложения, ссылка на главную страницу">
     <svg class="page-header__logo-tablet-svg page-header__logo-svg" width="146.3px" height="40.375px" focusable="false">
       <use xlink:href="img/sprite.svg#icon-pink-white-tablet">
       </use>
@@ -47,7 +47,7 @@
         </a>
       </li>
       <li class="site-list__item">
-        <a href="" class="main-nav__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">
           HTML Academy
         </a>
       </li>
@@ -58,9 +58,9 @@
   <section class="form-main__section-one">
     <div class="container">
       <div class="container__inner">
-      <h1 class="visually-hidden">
+      <h2 class="visually-hidden">
         Раздел с объявлением конкурса
-      </h1>
+      </h2>
       <p class="form-main__title">
         Конкурс на самое безбашенное путешествие с Пинк
       </p>
@@ -100,15 +100,15 @@
           <label for="surname" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Фамилия:
           </label>
-          <input id="surname" type="text" placeholder="Укажите фамилию *" name="surname" class="form-main__input">
+          <input id="surname" type="text" placeholder="Укажите фамилию *" name="surname" class="form-main__input" required>
           <label for="name" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Имя:
           </label>
-          <input id="name" type="text" placeholder="Введите ваше имя *" name="name" class="form-main__input form-main__input--long">
+          <input id="name" type="text" placeholder="Введите ваше имя *" name="name" class="form-main__input form-main__input--long" required>
           <label for="text-first" class="form-main__label form-main__label--red-color form-main__label--first-block">
             Отчество:
           </label>
-          <input id="text-first" type="text" placeholder="Ну и отчество тоже" name="patronymic" class="form-main__input">
+          <input id="text-first" type="text" placeholder="Ну и отчество тоже" name="patronymic" class="form-main__input" required>
         </div>
           </div>
         </div>
@@ -174,11 +174,11 @@
             <label for="number" class="form-main__label form-main__label--red-color form-main__label--contacts">
               Номер телефона
             </label>
-            <input id="number" type="tel" class="form-main__input form-main__input--media" name="phone" placeholder="Номер, пожалуйста">
+            <input id="number" type="tel" class="form-main__input form-main__input--media" name="phone" required placeholder="Номер, пожалуйста">
             <label for="email" class="form-main__label form-main__label--red-color form-main__label--contacts">
               адрес почты
             </label>
-            <input id="email" type="email" class="form-main__input form-main__input--media" name="email" placeholder="Введите почту *">
+            <input id="email" type="email" class="form-main__input form-main__input--media" name="email" required placeholder="Введите почту *">
         </fieldset>
             </div>
           </div>
@@ -228,7 +228,7 @@
               Опишите свои эмоции
             </p>
             <label>
-              <textarea name="review" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form-main__textarea"></textarea>
+              <textarea name="review" placeholder="Можно прям в красках, не стесняясь в выражениях" class="form-main__textarea" required></textarea>
             </label>
         </fieldset>
           </div>
@@ -256,7 +256,7 @@
   <div class="container__inner">
     <div class="page-footer__flex">
       <div class="page-footer__logo-pink-wrapper">
-        <a href="" class="page-footer__logo-pink-link">
+        <a href="#" class="page-footer__logo-pink-link" tabindex="-1">
           <svg class="page-footer__logo-pink-image" width="146.3px" height="40.375px">
             <use xlink:href="img/sprite.svg#icon-pink-blue-mobile">
             </use>
@@ -270,25 +270,37 @@
       <div class="page-footer__social">
         <ul class="page-footer__list">
           <li class="page-footer__item">
-            <a href="#" class="page-footer__image page-footer__image--twitter">
+            <a href="#" class="page-footer__image page-footer__image--twitter" tabindex="21" aria-label="мы в твиттере">
+              <svg class="page-footer__logo-social" width="18px" height="14px">
+                <use xlink:href="img/sprite.svg#icon-twitter">
+                </use>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__image page-footer__image--facebook">
+            <a href="#" class="page-footer__image page-footer__image--facebook" tabindex="22" aria-label="мы в фэйсбуке">
+              <svg class="page-footer__logo-social" width="18px" height="16px">
+                <use xlink:href="img/sprite.svg#icon-facebook">
+                </use>
+              </svg>
             </a>
           </li>
           <li class="page-footer__item">
-            <a href="#" class="page-footer__image page-footer__image--youtube">
+            <a href="#" class="page-footer__image page-footer__image--youtube" tabindex="23" aria-label="мы на ютуб">
+              <svg class="page-footer__logo-social" width="18px" height="14px">
+                <use xlink:href="img/sprite.svg#icon-youtube">
+                </use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__block-htmlacademy">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__link-htmlacademy">
-        <span class="page-footer__text-htmlacademy">
-        Разработано
-      </span>
-          <svg class="page-footer__image-htmlacademy" width="27px" height="34px">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__link-htmlacademy" aria-label="кликни, для перехода на страницу курсов для фронтенд-разработчиков" tabindex="24">
+          <span class="page-footer__text-htmlacademy">
+            Разработано
+          </span>
+          <svg class="page-footer__image-htmlacademy" width="27px" height="34px" focusable="false">
             <use xlink:href="img/sprite.svg#icon-htmlacademy">
             </use>
           </svg>
@@ -297,7 +309,12 @@
     </div>
   </div>
 </footer>
-<section class="popup-wrong container container__inner">
+<div class="popup-wrong popup-wrong--off popup-wrong--js">
+  <div class="container">
+  <div class="container__inner">
+  <h2 class="visually-hidden">
+    Всплывающая подсказка о неправильном заполнении формы
+  </h2>
   <p class="visually-hidden">
     Предупреждение о неправильном заполнении формы
   </p>
@@ -307,11 +324,18 @@
   <p class="popup-wrong__text">
     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
   </p>
-  <button class="popup-wrong__button button-green">
+  <button class="popup-wrong__button close-popup-wrong button-green">
     ok
   </button>
-</section>
-<section class="popup-success container container__inner">
+  </div>
+  </div>
+</div>
+<div class="popup-success popup-success--off popup-success--js">
+  <div class="container">
+    <div class="container__inner">
+  <h2 class="visually-hidden">
+    Всплывающая подсказка о правильном заполнении формы
+  </h2>
   <p class="visually-hidden">
     Предупреждение о успешной отправки формы
   </p>
@@ -327,9 +351,29 @@
       оповестим вас.
     </span>
   </p>
-  <button class="popup-success__button button-green">
+  <button class="popup-success__button close-popup-success button-green">
     закрыть окно
   </button>
-</section>
+    </div>
+  </div>
+</div>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
+</script>
+<script src="js/map.js">
+</script>
+<script src="js/picturefill-file.js">
+</script>
+<script src="js/picturefill.js" async="">
+</script>
+<script src="js/svg4everybody.legacy.min.js">
+</script>
+<script src="js/svg4everybody-file.min.js">
+</script>
+<script src="js/svg4everybody.min.js">
+</script>
+<script src="js/menu.js">
+</script>
+<script src="js/popup.js">
+</script>
 </body>
 </html>
