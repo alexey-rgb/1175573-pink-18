@@ -6,6 +6,10 @@
 @media (min-width: 660px) {
   .advantages-second {
     display: block;
+  }
+
+  .advantages-second .container__inner {
+    position: relative;
 
     &::before {
       content: "24";
@@ -15,8 +19,8 @@
       display: block;
       position: absolute;
       top: -46px;
-      right: 361px;
-      left: 20px;
+      right: 341px;
+      left: 0;
       width: 280px;
       height: 285px;
       background: no-repeat url("../img/timer.png");
@@ -28,7 +32,7 @@
       content: "";
       position: absolute;
       right: 419px;
-      left: 39px;
+      left: 19px;
       top: 18px;
       width: 202px;
       height: 202px;
@@ -79,20 +83,24 @@
     background-color: @grey-light;
     padding-top: 141px;
     padding-bottom: 112px;
+  }
+
+  .advantages-second .container__inner {
+    position: relative;
 
     &::before {
-      position: absolute;
-      right: 626px;
-      top: 44px;
-      left: 10px;
-      width: 317px;
-      height: 358px;
-      background: no-repeat url("../img/timer-desktop.png");
       content: "24";
       color: #d22856;
       font-size: 120px;
       font-weight: 700;
       display: block;
+      position: absolute;
+      top: -99px;
+      right: 341px;
+      left: 0;
+      width: 317px;
+      height: 358px;
+      background: no-repeat url("../img/timer-desktop.png");
       background-position: 2px 8px;
       padding: 181px 0 0 80px;
     }
@@ -100,8 +108,9 @@
     &::after {
       content: "";
       position: absolute;
-      left: 33px;
-      top: 119px;
+      right: 419px;
+      left: 23px;
+      top: -22px;
       width: 256px;
       height: 259px;
       background: no-repeat url("../img/diagram-fill-desktop.png");

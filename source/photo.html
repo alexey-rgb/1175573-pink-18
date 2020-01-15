@@ -6,10 +6,10 @@
   <title>
     Фотогалерея
   </title>
+  <link rel="preload" href="less/includes/fonts.less" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-<!-- класс .page-header--close, переключает состояния меню и внешний вид кнопки.-->
 <header class="page-header page-header--flag page-header--close page-header--no-js">
   <h1 class="visually-hidden">
     Скачать приложение Pink и прочитать отзывы.
@@ -62,7 +62,7 @@
     </h2>
     <div class="container">
       <div class="container__inner">
-      <p class="photo-gallery-block__title">
+      <p class="photo-gallery-block__title photo-gallery-block__title--close">
         Фотографии пользователей
       </p>
     </div>
@@ -312,6 +312,9 @@
     </div>
   </section>
   <section class="make-post-slogan container">
+    <h2 class="visually-hidden">
+      Раздел, содержащий слоган.
+    </h2>
     <div class="container__inner">
       <p class="make-post-slogan__title">
         <span class="make-post-slogan__title-position">
@@ -333,14 +336,14 @@
       <h2 class="visually-hidden">
         Добавить свою фотографию на сайт.
       </h2>
-      <div class="make-post__image">
+      <div class="make-post__image-block">
         <picture>
           <source type="img/webP" media="(min-width: 960px)" srcset="img/photo-road-desktop@2x.webp 2x">
           <source type="img/webP" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
           <source type="img/webP"  srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/photo-road-other-screen.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-          <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Моя фотография" class="photo-gallery__image-post">
+          <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Моя фотография" class="make-post__image">
         </picture>
       </div>
       <div class="make-post__control-area">
@@ -452,21 +455,9 @@
 </footer>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
 </script>
-<script src="js/map.js">
-</script>
-<script src="js/picturefill-file.js">
-</script>
-<script src="js/picturefill.js" async="">
-</script>
-<script src="js/svg4everybody.legacy.min.js">
-</script>
-<script src="js/svg4everybody-file.min.js">
+<script src="js/script.min.js">
 </script>
 <script src="js/svg4everybody.min.js">
-</script>
-<script src="js/menu.js">
-</script>
-<script src="js/popup.js">
 </script>
 </body>
 </html>

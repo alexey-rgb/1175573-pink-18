@@ -190,7 +190,8 @@
       </div>
     </div>
   </section>
-  <section class="advantages-second container">
+  <section class="advantages-second">
+    <div class="container">
     <div class="container__inner">
       <div class="advantages-second__wrapper">
         <h2 class="advantages-second__title">
@@ -213,6 +214,7 @@
           Узнать больше об исследовании
         </a>
       </div>
+    </div>
     </div>
   </section>
   <section class="reviews container">
@@ -378,7 +380,7 @@
           <p class="contacts__title">
             Звоните:
           </p>
-          <a href="tel:+78125556666" class="contacts__phone contacts--red" aria-label="контактный телефон +7 (812) 555-66-66, ссылка на автоматический набор номера через сервис браузера" tabindex="18">
+          <a href="tel:+78125556666" class="contacts__phone contacts__phone--red" aria-label="контактный телефон +7 (812) 555-66-66, ссылка на автоматический набор номера через сервис браузера" tabindex="18">
             +7 (812) 555-66-66
           </a>
         </div>
@@ -386,7 +388,7 @@
           <p class="contacts__title">
             Пишите:
           </p>
-          <a href="mailto:mail@htmlacademy.ru" class="contacts__email contacts--red" aria-label="электронная почта hello@pinkapp.ru, ссылка на страницу для отправки электронного письма" tabindex="19">
+          <a href="mailto:mail@htmlacademy.ru" class="contacts__email contacts__email--red" aria-label="электронная почта hello@pinkapp.ru, ссылка на страницу для отправки электронного письма" tabindex="19">
             hello@pinkapp.ru
           </a>
         </div>
@@ -394,15 +396,20 @@
           <p class="contacts__title">
             Приезжайте в гости:
           </p>
-          <a href="" class="contacts__address contacts--red" aria-label="адрес компании производителя приложения ул. Большая Конюшенная, 19 дробь 8, ссылка для перехода на страницу с картой" tabindex="20">
+          <a href="" class="contacts__address contacts__address--red" aria-label="адрес компании производителя приложения ул. Большая Конюшенная, 19 дробь 8, ссылка для перехода на страницу с картой" tabindex="20">
             ул. Большая Конюшенная, 19/8
           </a>
         </div>
       </div>
     </div>
   </section>
-  <div id="map" class="contacts__map">
+  <section class="map">
+    <h2 class="visually-hidden">
+      Карта с местонахождением компании.
+    </h2>
+  <div id="map" class="map__block">
   </div>
+  </section>
 </main>
 <footer class="page-footer page-footer--index container">
   <div class="container__inner">
@@ -463,21 +470,9 @@
 </footer>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=47c5d32a-7b4b-4252-9f5c-27b6bcb5a27c&lang=ru_RU">
 </script>
-<script src="js/map.js">
-</script>
-<script src="js/picturefill-file.js">
-</script>
-<script src="js/picturefill.js" async="">
-</script>
-<script src="js/svg4everybody.legacy.min.js">
-</script>
-<script src="js/svg4everybody-file.min.js">
+<script src="js/script.min.js">
 </script>
 <script src="js/svg4everybody.min.js">
-</script>
-<script src="js/menu.js">
-</script>
-<script src="js/popup.js">
 </script>
 </body>
 </html>
