@@ -27,7 +27,8 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"));
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 gulp.task("sprite", function () {
@@ -67,7 +68,7 @@ gulp.task("copy", function () {
     "source/img/**",
     "source/js/**",
     "source/*.io",
-    ], {base: "source"
+  ], {base: "source"
   })
     .pipe(gulp.dest("build"));
 });
