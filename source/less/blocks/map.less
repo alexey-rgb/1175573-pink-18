@@ -1,0 +1,46 @@
+.map__block {
+  position: relative;
+  width: 100%;
+  height: 199px;
+  margin-top: 37px;
+  background: no-repeat url("../img/map.jpg") @grey-light;
+  background-position: 47% 56%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: calc((100% - 56vw));
+    top: 95px;
+    width: 36px;
+    height: 36px;
+    background: url("../img/icon-map-marker.svg");
+  }
+}
+
+@media (min-width: 660px) {
+  .map__block {
+    height: 373px;
+    margin: 16px 0 0 0;
+    background: no-repeat url("../img/map.jpg") @grey-light;
+    background-size: 387%;
+    background-position: 46% 55%;
+
+    &::before {
+      left: calc(100% - 53vw);
+      top: 192px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .map__block {
+    height: 504px;
+    background-size: 262%;
+    background-position: 45% 55%;
+
+    &::before {
+      left: calc(100% - 52vw);
+      top: 266px;
+    }
+  }
+}

@@ -1,119 +1,418 @@
-.page-header {
+/*.page-header {
   background-color: @grey;
   margin-bottom: -64px;
   z-index: 2;
   position: relative;
 
-  /*&--close {
+  &--close {
     min-height: 66px;
-    margin-bottom: -73px;
+    margin-bottom: -80px;
     z-index: 2;
     position: relative;
     background-color: rgba(0, 0, 0, 0.6);
-  }*/
+
+    .main-nav__toggle {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      right: 20px;
+      top: -54px;
+      border: none;
+
+      &--close::before,
+      &--close::after {
+        display: none;
+      }
+
+      &--open {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        right: 20px;
+        top: -54px;
+        background: no-repeat url("../img/icon-menu-burger.svg");
+        border: none;
+
+        &:hover {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          top: -54px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+        }
+
+        &:active {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          top: -54px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .site-list {
+      display: none;
+    }
+  }
 }
 
-.page-header__logo-mobile {
+.page-header--no-js {
+  background-color: @grey;
+  margin-bottom: -64px;
+  z-index: 2;
+  position: relative;
+}
+
+.page-header--no-js .main-nav__toggle {
+  display: none;
+}
+
+.page-header--no-js .site-list {
   display: block;
+}
+
+
+.page-header__logo {
+  display: block;
+  width: 170px;
   padding-left: 20px;
   padding-top: 22px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
 
-.page-header__logo-mobile-svg {
+.page-header__logo-svg {
   fill: #ffffff;
+  cursor: pointer;
 }
 
-.page-header__logo-mobile:hover .page-header__logo-mobile-svg {
+.page-header__logo-svg:hover {
   fill: #d22856;
 }
 
-.page-header__logo-mobile:active .page-header__logo-mobile-svg {
+.page-header__logo-svg:active {
   fill: #ffffff;
   opacity: 0.3;
 }
 
-.page-header__logo-tablet {
+.page-header__logo-tablet-svg {
   display: none;
 }
 
-.page-header__logo-desktop {
+.page-header__logo-desktop-svg {
   display: none;
 }
 
 @media (min-width: 660px) {
-
   .page-header {
     width: 100%;
-    min-height: 110px;
 
-    /*&--close {
-      margin-bottom: -111px;
-    }*/
+    &--close {
+      min-height: 108px;
+    }
   }
 
-  .page-header__logo-mobile {
+  .page-header--close .main-nav__toggle--open {
+    bottom: 41px;
+    top: unset;
+  }
+
+  .page-header--close .main-nav__toggle--open:hover {
+    bottom: 41px;
+    top: unset;
+  }
+
+  .page-header--close .main-nav__toggle--open:active {
+    bottom: 41px;
+    top: unset;
+  }
+
+  .page-header__logo-mobile-svg {
     display: none;
   }
 
-  .page-header__logo-desktop {
+  .page-header__logo-desktop-svg {
     display: none;
-  }
-
-  .page-header__logo-tablet {
-    display: block;
-    padding-left: 20px;
-    padding-top: 26px;
-    margin-bottom: 35px;
   }
 
   .page-header__logo-tablet-svg {
-    fill: #ffffff;
+    display: block;
   }
 
-  .page-header__logo-tablet:hover .page-header__logo-tablet-svg {
-    fill: #d22856;
-  }
-
-  .page-header__logo-tablet:active .page-header__logo-tablet-svg {
-    fill: #ffffff;
-    opacity: 0.3;
+  .page-header__logo {
+    display: block;
+    padding-left: 20px;
+    padding-top: 26px;
+    margin-bottom: 45px;
   }
 }
 
-@media (min-width: 1200px) {
-
+@media (min-width: 960px) {
   .page-header {
     display: flex;
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
+
+    &--close {
+      display: flex;
+    }
   }
 
-  .page-header__logo-mobile {
+  .page-header__logo-mobile-svg {
     display: none;
   }
 
-  .page-header__logo-tablet {
+  .page-header__logo-tablet-svg {
     display: none;
   }
 
-  .page-header__logo-desktop {
+  .page-header__logo-desktop-svg {
     display: block;
-    padding-left: 131px;
-    padding-top: 28px;
+  }
+
+  .page-header__logo {
+    display: block;
+    padding: 27px 0 0;
     margin-bottom: 34px;
-    position: relative;
   }
 
-  .page-header__logo-desktop:hover::before {
-    content: "";
+  .page-header--close .site-list {
+    display: flex;
+  }
+}*/
+
+.page-header {
+  background-color: @grey;
+  margin-bottom: -66px;
+  z-index: 2;
+  position: relative;
+
+  .main-nav__toggle {
     position: absolute;
-    background: no-repeat url("../img/logo-pink-blue-mobile - Copy.svg");
-    width: 147px;
-    height: 40px;
+    width: 50px;
+    height: 30px;
+    border: none;
+
+    &--close {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      right: 7px;
+      top: -54px;
+      background-color: @grey;
+      outline: none;
+      border: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        background-color: #ffffff;
+        left: 12px;
+        bottom: 11px;
+        transform: rotate(135deg);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 4px;
+        background-color: #ffffff;
+        left: 12px;
+        bottom: 11px;
+        transform: rotate(45deg);
+      }
+    }
   }
 
-  .page-header__logo-desktop:active {
-    opacity: 0.1;
+  &--close {
+    margin-bottom: -66px;
+    z-index: 2;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .main-nav__toggle {
+      position: absolute;
+      width: 50px;
+      height: 30px;
+      right: 20px;
+      bottom: 16px;
+      border: none;
+
+      &--close::before,
+      &--close::after {
+        display: none;
+      }
+
+      &--open {
+        position: absolute;
+        width: 50px;
+        height: 30px;
+        right: 20px;
+        bottom: 16px;
+        background: no-repeat url("../img/icon-menu-burger.svg");
+        border: none;
+
+        &:hover {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          bottom: 16px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+        }
+
+        &:active {
+          position: absolute;
+          width: 50px;
+          height: 30px;
+          right: 20px;
+          bottom: 16px;
+          background: no-repeat url("../img/icon-menu-burger-red.svg");
+          border: none;
+          opacity: 0.3;
+        }
+      }
+    }
+
+    .site-list {
+      display: none;
+    }
+  }
+}
+
+.page-header--no-js {
+  background-color: @grey;
+  margin-bottom: -66px;
+  z-index: 2;
+  position: relative;
+}
+
+.page-header--no-js .main-nav__toggle {
+  display: none;
+}
+
+.page-header--no-js .site-list {
+  display: block;
+}
+
+.page-header__logo {
+  display: block;
+  width: 170px;
+  padding-left: 20px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+}
+
+.page-header__logo-svg {
+  fill: #ffffff;
+  cursor: pointer;
+}
+
+.page-header__logo-svg:hover {
+  fill: #d22856;
+}
+
+.page-header__logo-svg:active {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
+.page-header__logo-tablet-svg {
+  display: none;
+}
+
+.page-header__logo-desktop-svg {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .page-header {
+    width: 100%;
+  }
+
+  .page-header .main-nav__toggle--close {
+    top: -70px;
+  }
+
+  .page-header--close .main-nav__toggle--open {
+    bottom: 40px;
+  }
+
+  .page-header--close .main-nav__toggle--open:hover {
+    bottom: 40px;
+  }
+
+  .page-header--close .main-nav__toggle--open:active {
+    bottom: 40px;
+  }
+
+  .page-header__logo-mobile-svg {
+    display: none;
+  }
+
+  .page-header__logo-desktop-svg {
+    display: none;
+  }
+
+  .page-header__logo-tablet-svg {
+    display: block;
+  }
+
+  .page-header__logo {
+    display: block;
+    padding-left: 20px;
+    padding-top: 26px;
+    padding-bottom: 44px;
+  }
+
+  .page-header,
+  .page-header--close,
+  .page-header--no-js {
+    margin-bottom: -110px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-header {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+
+    &--close {
+      display: flex;
+    }
+  }
+
+  .page-header__logo-mobile-svg {
+    display: none;
+  }
+
+  .page-header__logo-tablet-svg {
+    display: none;
+  }
+
+  .page-header__logo-desktop-svg {
+    display: block;
+  }
+
+  .page-header__logo {
+    display: block;
+    padding: 27px 0 0;
+    margin-bottom: 34px;
+  }
+
+  .page-header--close .site-list {
+    display: flex;
   }
 }
