@@ -1,6 +1,8 @@
 .price {
   min-height: 474px;
-  margin-top: 71px;
+  margin-top: 32px;
+  padding: 91px 0 0 0;
+
   background-color: @grey-light;
   position: relative;
   overflow: hidden;
@@ -19,12 +21,14 @@
 
 .price__inner {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+
 .price__table {
-  position: absolute;
-  right: -254px;
-  bottom: -360px;
+  margin-right: 245px;
   border-collapse: collapse;
 }
 
@@ -123,8 +127,7 @@
 }
 
 .price__control {
-  position: relative;
-  bottom: -416px;
+  margin-top: 42px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -218,8 +221,9 @@ input[type="radio"]:checked + .price__control-button::before {
 
 @media (min-width: 660px) {
   .price {
-    margin-top: 55px;
+    margin-top: 13px;
     min-height: 377px;
+    padding: 86px 0 0;
 
     &::before {
       bottom: 326px;
@@ -230,8 +234,7 @@ input[type="radio"]:checked + .price__control-button::before {
   .price__table {
     table-layout: fixed;
     width: 619px;
-    right: 0;
-    top: 85px;
+    margin: 0;
   }
 
   .price__header {
@@ -287,7 +290,8 @@ input[type="radio"]:checked + .price__control-button::before {
 
 @media (min-width: 960px) {
   .price {
-    margin: 12px 0 0 0;
+    margin: 0;
+    padding: 135px 0 0;
     min-height: 514px;
 
     &::before {

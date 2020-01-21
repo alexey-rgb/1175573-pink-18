@@ -3,7 +3,8 @@
   position: relative;
   min-width: 320px;
   background: no-repeat url("../img/bg-back-mobile@1x.jpg") @grey;
-  background-size: 100%;
+  background-size: 100% auto;
+  background-position: center top;
   margin: 0;
   font-size: 24px;
   font-weight: 300;
@@ -11,7 +12,8 @@
   padding: 70px 0 85px;
   line-height: 28px;
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
     background: no-repeat url("../img/bg-back-mobile@2x.jpg");
     background-size: 100% auto;
     background-position: center -5px;
@@ -20,16 +22,14 @@
 }
 
 .photo-gallery-block__title {
+  width: 200px;
   margin: 26px auto 0 auto;
 }
 
 .photo-gallery-block__text {
   .slogan();
-  margin: 45px 0 49px;
-}
-
-.photo-gallery-block__text-position {
-  display: block;
+  width: 250px;
+  margin: 45px auto 49px;
 }
 
 @media (min-width: 660px) {
@@ -39,7 +39,8 @@
     background-position: center 0;
     padding: 67px 0 36px;
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
       background: no-repeat url("../img/bg-back-tablet@2x.jpg");
       background-size: 179% 166%;
       background-position: 50% 0;
@@ -47,21 +48,19 @@
   }
 
   .photo-gallery-block__title {
+    width: 390px;
     font-size: 50px;
     font-weight: 300;
     line-height: 55px;
-    margin: 117px 0 109px;
+    margin: 117px auto 109px;
   }
 
   .photo-gallery-block__text {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    margin: 93px 48px 75px 50px;
-  }
-
-  .photo-gallery-block__text-position {
-    display: inline;
+    width: 450px;
+    margin: 92px auto 76px;
   }
 }
 
@@ -73,7 +72,8 @@
     margin-top: -112px;
     padding: 120px 0 31px 0;
 
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
       background: no-repeat url("../img/bg-back-desktop@2x.jpg");
       background-size: 266% 127vh;
       background-position: 50% 0;
@@ -81,15 +81,12 @@
   }
 
   .photo-gallery-block__title {
-    margin: 58px 256px 71px 259px;
+    margin: 58px auto 71px;
     line-height: 58px;
   }
 
-  .photo-gallery-block__text-position:last-child {
-    display: block;
-  }
-
   .photo-gallery-block__text {
-    margin: 92px 48px 88px 50px;
+    width: 640px;
+    margin: 92px auto 88px;
   }
 }

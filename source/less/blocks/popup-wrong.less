@@ -3,15 +3,19 @@
   width: 100%;
   min-height: 289px;
   text-align: center;
-  box-shadow: 0 -11px 11px 0 hsla(180, 100%, 0%, 0.15);
-  padding-top: 46px;
+  box-shadow: 15px 0 8px -3px rgba(50, 50, 50, 0.75);
+  padding-top: 37px;
   background-color: #ffffff;
 
   &--off {
     display: block;
     position: absolute;
-    bottom: 61vh;
-    left: 0;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -65%);
+    z-index: 10;
   }
 }
 
@@ -24,10 +28,11 @@
 
 .popup-wrong__text {
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 23px;
-  margin: 45px 0;
+  margin: 24px auto 38px;
   padding: 0;
+  width: 275px;
 }
 
 .popup-wrong__button {
@@ -42,10 +47,14 @@
   .popup-wrong {
     min-height: 363px;
     width: 460px;
+    padding-top: 35px;
 
     &--off {
-      bottom: 34vh;
-      left: 15vw;
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -160%);
     }
   }
 
@@ -57,9 +66,11 @@
 
   .popup-wrong__text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
-    padding: 0 50px;
+    width: 300px;
+    margin: 21px auto 38px;
+    padding: 0;
   }
 
   .popup-wrong__button {
@@ -70,13 +81,16 @@
 
 @media (min-width: 960px) {
   .popup-wrong {
-    width: 65%;
+    width: 785px;
     min-height: 377px;
-    position: relative;
+    padding-top: 38px;
 
     &--off {
-      bottom: 91vh;
-      left: 17vw;
+      top: 50%;
+      bottom: 50%;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -47%);
     }
 
 
@@ -85,7 +99,7 @@
       position: absolute;
       width: 100%;
       background-color: @grey-light;
-      min-height: 163px;
+      min-height: 167px;
       right: 0;
       bottom: 0;
     }
@@ -95,22 +109,24 @@
     font-size: 30px;
     line-height: 40px;
     padding: 0;
+    margin: 0 auto;
   }
 
   .popup-wrong__text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
-    padding: 0 180px;
-    margin: 22px 0;
+    width: 350px;
+    margin: 22px auto;
+    padding: 0;
   }
 
   .popup-wrong__button {
-    width: 296px;
+    width: 300px;
     margin: 0;
     position: absolute;
     z-index: 1;
-    right: 172px;
-    bottom: 47px;
+    right: 239px;
+    bottom: 57px;
   }
 }
