@@ -9,15 +9,15 @@
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
-  padding: 70px 0 85px;
+  padding: 70px 0 84px;
   line-height: 28px;
 
   @media (min-resolution: 144dpi),
-  (min-resolution: 1.5dppx) {
+    (min-resolution: 1.5dppx) {
     background: no-repeat url("../img/bg-back-mobile@2x.jpg");
     background-size: 100% auto;
     background-position: center -5px;
-    padding: 70px 0 85px;
+    padding: 70px 0 84px;
   }
 }
 
@@ -32,18 +32,31 @@
   margin: 45px auto 49px;
 }
 
+@media (min-width: 350px) {
+  .photo-gallery-block__section {
+    background-position: center center;
+
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background-position: center center;
+    }
+  }
+}
+
 @media (min-width: 660px) {
   .photo-gallery-block__section {
+    min-height: 444px;
     background: no-repeat url("../img/bg-back-tablet.jpg");
     text-align: center;
     background-position: center 0;
-    padding: 67px 0 36px;
+    padding: 67px 0;
 
     @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
+      (min-resolution: 1.5dppx) {
       background: no-repeat url("../img/bg-back-tablet@2x.jpg");
-      background-size: 179% 166%;
-      background-position: 50% 0;
+      background-size: 185% auto;
+      background-position: center top;
+      padding: 66px 0 33px;
     }
   }
 
@@ -52,7 +65,7 @@
     font-size: 50px;
     font-weight: 300;
     line-height: 55px;
-    margin: 117px auto 109px;
+    margin: 124px auto 0;
   }
 
   .photo-gallery-block__text {
@@ -64,8 +77,18 @@
   }
 }
 
+@media (min-width: 780px) {
+  .photo-gallery-block__section {
+    @media (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+      background-position: center -65px;
+    }
+  }
+}
+
 @media (min-width: 960px) {
   .photo-gallery-block__section {
+    min-height: 399px;
     background: no-repeat url("../img/bg-back-desktop.jpg");
     text-align: center;
     background-position: 50% 0;
@@ -73,15 +96,15 @@
     padding: 120px 0 31px 0;
 
     @media (min-resolution: 144dpi),
-    (min-resolution: 1.5dppx) {
+      (min-resolution: 1.5dppx) {
       background: no-repeat url("../img/bg-back-desktop@2x.jpg");
-      background-size: 266% 127vh;
-      background-position: 50% 0;
+      background-size: 2565px 920px;
+      background-position: center top;
     }
   }
 
   .photo-gallery-block__title {
-    margin: 58px auto 71px;
+    margin: 60px auto 0;
     line-height: 58px;
   }
 

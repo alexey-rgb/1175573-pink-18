@@ -95,7 +95,7 @@
   height: 40.375px;
 }
 
-.page-footer__logo-pink-svg-desktop {
+.page-footer__logo-star-glasses {
   display: none;
 }
 
@@ -144,6 +144,10 @@
   margin-bottom: 40px;
 }
 
+.page-footer__image:active {
+  opacity: 0.3;
+}
+
 @media (min-width: 660px) {
   .page-footer {
     display: block;
@@ -158,12 +162,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 612px;
   }
 
   .page-footer__social {
-    margin: 0;
-    transform: translateX(-9px);
+    margin: 0 17px 0 0;
   }
 
   .page-footer__image--facebook .page-footer__logo-social {
@@ -195,12 +197,12 @@
 
   .page-footer__text-htmlacademy {
     position: relative;
-    right: 5px;
+    right: 2px;
     margin: 0;
   }
 
   .page-footer__block-htmlacademy {
-    margin: 0;
+    margin: 0 8px 0 0;
   }
 
   .page-footer--photo {
@@ -209,14 +211,6 @@
 }
 
 @media (min-width: 960px) {
-  .page-footer__flex {
-    width: 936px;
-
-    &--index {
-      width: 933px;
-    }
-  }
-
   .page-footer--form {
     width: 100%;
     margin: 0 auto 66px;
@@ -237,11 +231,11 @@
     margin: 0;
   }
 
-  .page-footer__logo-pink-svg {
+  .page-footer__logo-glasses {
     display: none;
   }
 
-  .page-footer__logo-pink-svg-desktop {
+  .page-footer__logo-star-glasses {
     display: block;
   }
 
@@ -252,9 +246,5 @@
   .page-footer__social {
     margin: 0;
     transform: translateX(5px);
-  }
-
-  .page-footer__block-htmlacademy {
-    margin: 0;
   }
 }

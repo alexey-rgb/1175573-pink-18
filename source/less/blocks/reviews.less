@@ -1,6 +1,7 @@
 .reviews {
   text-align: center;
   min-height: 277px;
+  position: relative;
 }
 
 .reviews__item-reverse {
@@ -35,19 +36,28 @@
 
 .reviews__radio-button-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin: 22px auto 0;
+  justify-content: center;
+  margin: 53px auto 0;
   padding: 0;
   width: 55px;
 }
 
 .reviews__radio-button {
+  display: none;
   height: 6px;
   width: 6px;
 }
 
 .reviews__radio-item {
   position: relative;
+}
+
+.reviews__radio-item:nth-of-type(2) {
+  margin: 0 25px;
+}
+
+.reviews__radio-label {
+  cursor: pointer;
 }
 
 .reviews__radio-label::after {
@@ -62,7 +72,7 @@
   background-color: @grey-light;
 }
 
-input[type="radio"]:checked + .reviews__radio-label::before {
+.reviews__radio-button:checked + .reviews__radio-label::before {
   content: "";
   position: absolute;
   left: -4px;
@@ -75,7 +85,7 @@ input[type="radio"]:checked + .reviews__radio-label::before {
   z-index: 2;
 }
 
-input[type="radio"]:disabled + .reviews__radio-label::before {
+.reviews__radio-button:disabled + .reviews__radio-label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -137,7 +147,7 @@ input[type="radio"]:disabled + .reviews__radio-label::before {
   }
 
   .reviews__radio-button-wrapper {
-    margin: 25px auto 0;
+    margin: 54px auto 0;
   }
 }
 
@@ -158,6 +168,7 @@ input[type="radio"]:disabled + .reviews__radio-label::before {
 
   .reviews__name {
     font-size: 24px;
+    padding: 37px 0 0;
   }
 
   .reviews__experience {
@@ -179,13 +190,6 @@ input[type="radio"]:disabled + .reviews__radio-label::before {
   .reviews__button:nth-of-type(2):active ~ .reviews__button:nth-of-type(3)::before {
     opacity: 0.1;
   }
-
-  /*.reviews__button:nth-of-type(1)::after,
-  .reviews__button:nth-of-type(1)::before,
-  .reviews__button:nth-of-type(2)::before {
-    display: none;
-  }*/
-
 
   .reviews__button:nth-of-type(1) {
     bottom: 159px;
@@ -240,26 +244,26 @@ input[type="radio"]:disabled + .reviews__radio-label::before {
   }
 
   .reviews__button-wrapper {
-  display: block;
-}
+    display: block;
+  }
 
-.reviews__button {
-  border: none;
-  position: relative;
-  display: block;
-  border-radius: 50%;
-  background-color: #283645;
-  opacity: 0.3;
-  width: 6px;
-  height: 6px;
-  padding: 0;
-}
+  .reviews__button {
+    border: none;
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    background-color: #283645;
+    opacity: 0.3;
+    width: 6px;
+    height: 6px;
+    padding: 0;
+  }
 
-.reviews__button:hover {
-  opacity: 0.6;
-}
+  .reviews__button:hover {
+    opacity: 0.6;
+  }
 
-.reviews__button:active {
-  opacity: 0.1;
-}
+  .reviews__button:active {
+    opacity: 0.1;
+  }
 }

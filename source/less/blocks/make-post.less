@@ -24,9 +24,20 @@
 .make-post__list {
   display: flex;
   justify-content: center;
-  margin: 0;
+  width: 197px;
+  margin: 0 0 0 35px;
+  padding: 31px 0 0 0;
   position: relative;
-  padding: 31px 10px 100px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    left: -17px;
+    top: 115px;
+    background-color: #000000;
+  }
 }
 
 .make-post__item-control {
@@ -125,7 +136,7 @@
 }
 
 .make-post__item:nth-of-type(2) {
-  padding: 0 39px 0 33px;
+  padding: 0 39px 0 34px;
 }
 
 .make-post__item:nth-of-type(3) {
@@ -136,68 +147,41 @@
   width: 240px;
   height: 2px;
   background-color: #000000;
-  position: absolute;
+
+  &--first {
+    display: none;
+  }
+
+  &--second {
+    display: none;
+  }
+
+  &--third {
+    display: none;
+  }
 }
 
-.make-post__scale-bar--first {
-  width: 240px;
-  left: 17px;
-  top: 115px;
-}
+.make-post__scale-button-index {
+  &:active {
+    background-color: #d22856;
+  }
 
-.make-post__scale-bar--second {
-  display: none;
-}
-
-.make-post__scale-bar--third {
-  display: none;
+  position: relative;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #d22856;
+  background-color: @grey-light;
+  margin: 19px 0 0 156px;
+  padding: 0;
 }
 
 .make-post__scale-button {
-  position: absolute;
-  right: 28px;
-  top: 63px;
-  border: none;
-  background-color: transparent;
-}
-
-.make-post__scale-button--first {
-  top: 116px;
-  right: 57px;
-  left: 212px;
-}
-
-.make-post__scale-button--second {
   display: none;
 }
 
-.make-post__scale-button--third {
-  display: none;
-}
-
-.make-post__scale-button::before {
-  content: "";
-  position: absolute;
-  right: -1px;
-  bottom: -5px;
-  width: 14px;
-  height: 14px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background-color: @grey-light;
-}
-
-.make-post__scale-button:active::after {
-  content: "";
-  position: absolute;
-  right: -1px;
-  bottom: -5px;
-  width: 14px;
-  height: 14px;
-  border: 2px solid #d22856;
-  border-radius: 50%;
-  background-color: #d22856;
-  z-index: 1;
+.make-post__button-wrapper-flex {
+  margin-top: 59px;
 }
 
 @media (min-width: 660px) {
@@ -212,10 +196,19 @@
     padding-top: 0;
   }
 
+  .make-post__area {
+    width: 310px;
+  }
+
   .make-post__list {
+    width: 260px;
     flex-direction: column;
-    margin: 64px 0 0 48px;
+    margin: 65px 0 0 38px;
     padding: 0;
+
+    &::before {
+      display: none;
+    }
   }
 
   .make-post__item {
@@ -239,7 +232,6 @@
   }
 
   .make-post__item:nth-of-type(2) {
-
     &::before {
       left: -4px;
       top: 46px;
@@ -250,12 +242,10 @@
   }
 
   .make-post__item:nth-of-type(3) {
-
     &::before {
       left: -4px;
       top: 42px;
     }
-
     padding: 0;
     margin-left: 5px;
   }
@@ -274,7 +264,7 @@
   }
 
   .make-post__button-wrapper-flex {
-    margin: 93px 0 53px 47px;
+    margin: 93px 0 53px 36px;
   }
 
   .make-post__image-wrapper {
@@ -283,14 +273,8 @@
     padding: 0;
   }
 
-  .make-post__image-block {
-    width: 538px;
-    margin-top: 56px;
-  }
-
   .make-post__image {
-    width: 100%;
-    height: auto;
+    margin-top: 56px;
   }
 
   .make-post__image-mobile {
@@ -306,6 +290,10 @@
     height: 22px;
   }
 
+  .make-post__control-area {
+    width: 310px;
+  }
+
   .make-post__scale-bar {
     position: unset;
     width: 202px;
@@ -313,6 +301,7 @@
   }
 
   .make-post__scale-bar--first {
+    display: block;
   }
 
   .make-post__scale-bar--second {
@@ -323,53 +312,43 @@
     display: block;
   }
 
-  .make-post__scale-button--first {
-    position: unset;
-    margin-left: -66px;
+  .make-post__scale-button-index {
+    display: none;
   }
 
-  .make-post__scale-button--first::before {
-    right: 60px;
-    bottom: 3px;
-  }
-
-  .make-post__scale-button--first:active::after {
-    right: 60px;
-    bottom: 3px;
-  }
-
-  .make-post__scale-button--second {
+  .make-post__scale-button {
     display: block;
-    position: unset;
-    margin-left: -190px;
-  }
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #d22856;
+    background-color: @grey-light;
+    margin: 0 0 0 156px;
+    padding: 0;
 
-  .make-post__scale-button--second::before {
-    right: 181px;
-    bottom: 4px;
-  }
+    &:active {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #d22856;
+      border-radius: 50%;
+      background-color: #d22856;
+      z-index: 1;
+    }
 
-  .make-post__scale-button--second:active::after {
-    right: 181px;
-    bottom: 4px;
-  }
+    &--first {
+      margin-left: -56px;
+    }
 
-  .make-post__scale-button--third {
-    display: block;
-    position: unset;
-    margin-left: -115px;
-  }
+    &--second {
+      display: block;
+      margin-left: -179px;
+    }
 
-  .make-post__scale-button--third::before {
-    right: 110px;
-    bottom: 2px;
+    &--third {
+      display: block;
+      margin-left: -105px;
+    }
   }
-
-  .make-post__scale-button--third:active::after {
-    right: 110px;
-    bottom: 2px;
-  }
-
 
   .make-post__item:nth-of-type(1) .make-post__item-control {
     fill: @red;
@@ -421,14 +400,15 @@
     margin: 37px 91px 47px 80px;
   }
 
-  .make-post__image-block {
+  .make-post__image {
     width: 300px;
-    margin: 38px 0 47px 70px;
+    margin: 36px 0 47px 70px;
   }
 
   .make-post__list {
     padding: 0;
-    margin: 36px 0 0 8px;
+    margin: 33px 0 0 8px;
+    width: 385px;
   }
 
   .make-post__item:nth-of-type(2) {
@@ -494,44 +474,23 @@
   }
 
   .make-post__scale-bar {
-
     &--third {
       margin-left: 52px;
     }
-
     margin-left: 44px;
     width: 287px;
   }
 
   .make-post__scale-button--first {
-
-    &::before {
-      right: 283px;
-      bottom: 15px;
-    }
-
-    position: unset;
-    margin-left: -234px;
+    margin-left: -213px;
   }
 
   .make-post__scale-button--second {
-
-    &::before {
-      right: 107px;
-      bottom: 18px;
-    }
-
-    margin-left: -51px;
+    margin-left: -41px;
   }
 
   .make-post__scale-button--third {
-
-    &::before {
-      right: 194px;
-      bottom: 8px;
-    }
-
-    margin-left: -135px;
+    margin-left: -126px;
   }
 
   .make-post__control-area {
