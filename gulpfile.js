@@ -40,7 +40,7 @@ gulp.task("sprite", function () {
 
 gulp.task("html", function () {
   return gulp
-    .src(["*.html", "source/*.html"])
+    .src("source/*.html")
     .pipe(posthtml([include()]))
     .pipe(gulp.dest("build"));
 });
