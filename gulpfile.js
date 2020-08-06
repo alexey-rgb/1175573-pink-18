@@ -4,11 +4,10 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var less = require("gulp-less");
-// var gulpautoprefixer = require("gulp-autoprefixer");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-//var csso = require("gulp-csso");
+var csso = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -18,32 +17,18 @@ var include = require("posthtml-include");
 var del = require("del");
 
 gulp.task("css", function () {
-  return (
-    gulp
-      .src("source/less/style.less")
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(less())
-      .pipe(postcss([autoprefixer()]))
-      /* .pipe(csso())
-    .pipe(rename("style.min.css")) */
-      .pipe(sourcemap.write("."))
-      .pipe(gulp.dest("build/css"))
-      .pipe(server.stream())
-  );
-});
-
-//Creating a Style task that convert LESS to CSS
-/*
-gulp.task("styles", function () {
-  var srcfile = "source/less/style.less";
-  var temp = "build/css";
   return gulp
-    .src(srcfile)
+    .src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(gulpautoprefixer({ browsers: ["last 2 versions", ">5%"] }))
-    .pipe(gulp.dest(temp));
-}); */
+    .pipe(postcss([autoprefixer()]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
+});
 
 gulp.task("sprite", function () {
   return gulp
@@ -118,7 +103,5 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-
-/* gulp.task("build", gulp.series("clean", "copy", "styles", "sprite", "html")); */
 
 gulp.task("start", gulp.series("build", "server"));
